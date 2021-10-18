@@ -1,0 +1,25 @@
+@import url(http://fonts.googleapis.com.com/earlyccess/nanumgothic.css);
+
+.ng font
+{
+    font-family: 'Nanum Gothic' , '돋움';
+}
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+
+body
+{
+    background:url('Image/Index_Main.jpg')no-repeat right bottom fixed;
+    background-size: cover;
+}
+
+@media screen and (min-width:721px)
+{
+
+}
