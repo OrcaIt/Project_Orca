@@ -19,10 +19,14 @@ body
     background-size: cover;
 }
 
-a:link, a:hover, a:visited
+a:link, a:visited
 {
     color:#fff;
     text-decoration: none;
+}
+a:hover
+{
+    color: rgb(177, 172, 255);
 }
 
 .navbar
@@ -91,18 +95,57 @@ p
     font-style: bold;
 }
 
+button
+{
+    margin: 60px;
+    height: 50px;
+    width: 300px;
+    border: 3px solid rgb(177, 172, 255);
+    border-radius: 15px;
+    color: white;
+    font-size: 24px;
+    opacity: 85%;
+    background: rgb(24, 24, 24);
+}
+
+button:hover
+{
+    background-color: rgb(177, 172, 255);
+}
+
 #main
 {
     display:inline-block;
     position: fixed;
-    top: 25vh;
+    top: 30vh;
     left: 50vh;
     right: 50vh;
     text-align:center;
     color: white;
 }
 
-@media screen and (min-width:721px)
+@media screen and (max-width:1480px)
 {
+#main
+{
+    left: 10vh;
+    text-align:left;
+}
+
+button
+{
+    margin-left: 0px;
+    height: 50px;
+    width: 300px;
+    left: 10px;
+}
+
+hr
+{
+    height: 5px;
+    background-color: white;
+    margin-top: 20px;
+    margin-left:0;
+}
 
 }
