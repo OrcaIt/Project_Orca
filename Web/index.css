@@ -19,6 +19,35 @@ body
     background-size: cover;
 }
 
+h2
+{
+    font-size: 4em;
+}
+
+hr
+{
+    height: 5px;
+    background-color: white;
+}
+
+p
+{
+    font-size:1.3em;
+    font-style: bold;
+    margin: 10px;
+}
+
+#main
+{
+    display:inline-block;
+    position: fixed;
+    top: 20vh;
+    left: 50vh;
+    right: 50vh;
+    text-align:center;
+    color: white;
+}
+
 @media screen and (min-width:721px)
 {
 
