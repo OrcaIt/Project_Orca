@@ -33,6 +33,7 @@ a:hover
 {
     background-color: rgb(24, 24, 24);
     position: relative;
+    text-align: center;
 }
 
 nav
@@ -44,14 +45,15 @@ nav
     padding: 10px;
 }
 
-nav ul
+nav ul#list
 {
     display: inline-block;
     padding: 0;
+    text-align: center;
     margin: 0 auto;
 }
 
-nav ul li
+nav ul#list li
 {
     list-style-type: none; 
     float: left;
@@ -153,10 +155,21 @@ hr
     margin-left:0;
 }
 
-nav ul
+nav ul#list
 {
     display: none;
+    height:auto;
 } 
+
+nav ul#list li
+{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 6px;
+    margin-top: 15px;
+    padding:5px;
+}
 
 nav
 {
@@ -165,8 +178,6 @@ nav
 
 nav a#trigger
 {
-    margin-right: 30px;
-    margin-bottom: 0px;
     font-size: 1.2em;
     display: inline-block;
 }

@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <title>Orac Cloud</title>
     <link rel = "stylesheet" href="index.css">
+    <script type="text/javascript" src="index.js"></script>
 </head>
 <body>
     <header>
         <div class = "navbar">
             <a href ="index.html"><img id = "rogo" src ="Image/nav_Logo.png" width = "280px" height= "50px"></img></a>  
             <nav>  
-                <ul>        
+                <a href="javascript:hide_menu();" id = "trigger"><img src="Image/Hamberger_btn.png" width ="35px" height="30px"></a>
+                <ul id = list>        
                     <li><a href = "product.html">PRODUCT</a></li>
                     <li><a href = "about.html">ABOUT</a></li>
                     <li><a href = "design.html">DESIGN</a></li>
                     <li><a href = "company.html">COMPANY</a></li>
-                </ul>
-                <a href="#" id="trigger"><img src="Image/Hamberger_btn.png" width ="30px" height="30px"></a>     
+                </ul>         
             </nav>
         </div>
     </header>  
@@ -35,3 +35,4 @@
     </div>  
 </body>
 </html>  
+
