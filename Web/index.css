@@ -124,6 +124,11 @@ button:hover
     color: white;
 }
 
+nav a#trigger
+{
+    display: none;
+}
+
 @media screen and (max-width:1870px)
 {
 #main
@@ -146,6 +151,24 @@ hr
     background-color: white;
     margin-top: 20px;
     margin-left:0;
+}
+
+nav ul
+{
+    display: none;
+} 
+
+nav
+{
+    text-align: right;
+}
+
+nav a#trigger
+{
+    margin-right: 30px;
+    margin-bottom: 0px;
+    font-size: 1.2em;
+    display: inline-block;
 }
 
 }
