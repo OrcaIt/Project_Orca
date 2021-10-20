@@ -1,13 +1,8 @@
-function hide_menu()
-{
-        var target = document.getElementById('list');
+const toggleBtn = document.querySelector('.navbar_toggleBtn');
+const menu = document.querySelector('.navbar_menu');
+const icons = document.querySelector('.navbar_icons');
 
-        if(target.style.display == "none")
-        {
-            target.style.display = "flex";
-        }
-        else
-        {
-            target.style.display="none";
-        }
-}
+toggleBtn.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    icons.classList.toggle('active');
+});

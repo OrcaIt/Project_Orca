@@ -6,33 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orac Cloud</title>
     <link rel = "stylesheet" href="index.css">
-    <script type="text/javascript" src="index.js"></script>
+    <script src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/384a503f7d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class = "navbar">
-            <a href ="index.html"><img id = "rogo" src ="Image/nav_Logo.png" width = "280px" height= "50px"></img></a>  
-            <nav>  
-                <a href="javascript:hide_menu();" id = "trigger"><img src="Image/Hamberger_btn.png" width ="35px" height="30px"></a>
-                <ul id = list>        
-                    <li><a href = "product.html">PRODUCT</a></li>
-                    <li><a href = "about.html">ABOUT</a></li>
-                    <li><a href = "design.html">DESIGN</a></li>
-                    <li><a href = "company.html">COMPANY</a></li>
-                </ul>         
-            </nav>
+        <nav class="navbar">
+            <div class="navbar_logo">
+                <i class="fab fa-accusoft"></i>
+                <a href="index.html">Orca Cloud</a>
+            </div>
+            <ul class="navbar_menu">
+                <li><a href="">PRODUCT</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">PRICING</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">COMPANY</a></li>
+            </ul>
+            <ul class="navbar_icons">
+                <li><a href=""><i class="fab fa-facebook-square"></i></a></i></li>
+                <li><a href = ""><i class="fab fa-instagram"></a></i></li>
+            </ul>
+            <a href="#" class="navbar_toggleBtn">
+                <i class="fas fa-bars"></i>
+            </a>
+        </nav>     
+        <div id = "main">
+            <h2>Orca Cloud </h2> 
+            <h3>Storage Service</h3>
+            <hr>
+            <br>
+            <P>Hello, this is Orca Cloud.</P>
+            <p>This product will provide you with a better environment.</p>
+            <p>We provide you with storage space.</p>
+            <button onclick = "location.href = 'main.html'">Go to Drive Service</button>
         </div>
-    </header>  
-    <div id = "main">
-        <h2>Orca Cloud</h2>
-        <h3>Storage Service</h3>
-        <hr>
-        <br>
-        <P>Hello, this is Orca Cloud.</P>
-        <p>This product will provide you with a better environment.</p>
-        <p>We provide you with storage space.</p>
-        <button onclick = "location.href = 'main.html'">Go to Drive Service</button>
-    </div>  
 </body>
 </html>  
 

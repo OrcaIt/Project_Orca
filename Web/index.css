@@ -1,74 +1,88 @@
-@import url(http://fonts.googleapis.com.com/earlyccess/nanumgothic.css);
-
-.ng font
-{
-    font-family: 'Nanum Gothic' , '돋움';
-}
-*
-{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    -moz-box-sizing:border-box;
-    -webkit-box-sizing:border-box;
+:root{
+    --text-color: #f0f4f5;
+    --accent-color: rgb(177,172,255)
 }
 
 body
 {
+    margin: 0;
     background:url('Image/Index_Main.jpg')no-repeat right bottom fixed;
     background-size: cover;
+    font-family: 'Source Sans Pro';
 }
 
-a:link, a:visited
+a
 {
-    color:#fff;
     text-decoration: none;
-}
-a:hover
-{
-    color: rgb(177, 172, 255);
+    color: white;
 }
 
 .navbar
 {
-    background-color: rgb(24, 24, 24);
-    position: relative;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+    padding: 0px 12px;
 }
 
-nav
+.navbar_logo
 {
-    font-size: 1.3em;
-    position: relative;
-    text-align: center;
-    font-style: bold;
-    padding: 10px;
+    font-size: 32px;
+    color: white;
+    margin-left: 14px;
 }
 
-nav ul#list
+.navbar_logo i
 {
-    display: inline-block;
-    padding: 0;
-    text-align: center;
-    margin: 0 auto;
+    color: rgb(177, 172, 255);
 }
 
-nav ul#list li
+.navbar_menu
 {
-    list-style-type: none; 
-    float: left;
-    text-align: center;
-    margin-left: 60px;
-    padding: 0 0 0 0;
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.4em;
 }
 
-
-#rogo
+.navbar_menu li
 {
-   position: fixed;
-   margin-left: 10px;
-   top: 0;
-   left: 0;
+    padding: 5px 12px;
+    margin: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navbar_menu li:hover
+{
+    background-color: rgb(177, 172, 255);
+    border-radius: 14px;
+}
+
+.navbar_icons
+{
+    list-style: none;
+    color: white;
+    display: flex;
+    font-size: 1.6em;
+    margin: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navbar_icons li
+{
+    padding: 8px 12px;
+}
+
+.navbar_toggleBtn
+{
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 30px;
+    color: rgb(177, 172, 255)
 }
 
 h2
@@ -91,13 +105,14 @@ hr
     margin: 10px;
 }
 
-p
+#main p
 {
     font-size:1.3em;
     font-style: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-button
+#main button
 {
     margin: 60px;
     height: 50px;
@@ -110,7 +125,7 @@ button
     background: rgb(24, 24, 24);
 }
 
-button:hover
+#main button:hover
 {
     background-color: rgb(177, 172, 255);
 }
@@ -119,27 +134,69 @@ button:hover
 {
     display:inline-block;
     position: fixed;
-    top: 30vh;
+    top: 20vh;
     left: 50vh;
     right: 50vh;
     text-align:center;
     color: white;
 }
 
-nav a#trigger
+#text
 {
-    display: none;
+    display: none
 }
 
-@media screen and (max-width:1870px)
+@media screen and (max-width: 1870px) 
 {
-#main
+    .navbar
+    {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navbar_menu
+    {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%
+    }
+
+    .navbar_menu li
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar_icons
+    {
+        display: none;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar_toggleBtn
+    {
+        display: block;
+    }
+
+    .navbar_menu.active,
+    .navbar_icons.active
+    {
+        display: flex;
+    }
+
+    #main
 {
     left: 10vh;
+    top: 30vh;
     text-align:left;
 }
 
-button
+#main button
 {
     margin-left: 0px;
     height: 50px;
@@ -147,39 +204,19 @@ button
     left: 10px;
 }
 
-hr
+#main p
 {
-    height: 5px;
-    background-color: white;
-    margin-top: 20px;
-    margin-left:0;
+display: none;
 }
 
-nav ul#list
-{
-    display: none;
-    height:auto;
-} 
-
-nav ul#list li
+#text
 {
     display: block;
-    width: 100%;
+    color: white;
+    font-size: 1.7em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    margin: 6px;
-    margin-top: 15px;
-    padding:5px;
+    top: 40vh;
+    right: 15vh
 }
-
-nav
-{
-    text-align: right;
-}
-
-nav a#trigger
-{
-    font-size: 1.2em;
-    display: inline-block;
-}
-
 }
