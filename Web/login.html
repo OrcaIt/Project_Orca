@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orca Cloud</title>
-    <link rel="stylesheet" href="login.css">
+    <title>Orac Cloud</title>
+    <link rel = "stylesheet" href="login.css">
+    <script src="login_alert.js" defer></script>
+    <script src="https://kit.fontawesome.com/384a503f7d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-
-    </header>
-    <main>
-        <form class="LoginBox" method="post">
-            <font color="white"> <label for="user-id"></label><input type="text" id="user-id" name="id" placeholder="ID">
-                <input type="text" name="password" placeholder="PW"><br></font>
-            <button type="submit">Login</button> <br>
-            <span><a href ="SignUp.html">회원가입</a></sapn>&nbsp;&nbsp;&nbsp;&nbsp;<sapn><a href ="CheckID.html">ID 찾기</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span><a href ="CheckPW.html">비밀번호 찾기</a></span>
-        </form>
-    </main>
+    <div>
+        <form class="left" method="post">
+            <span class="rogo"><i class="fab fa-accusoft"></i></span><span>Orca Cloud</span>
+         </form>
+         <div class="right">
+            <h2><b>Login to Orca Cloud</b></h2>
+            <br>
+            <label for="user-id"><input type="text" id="user-id" name="id" placeholder="User ID"></label><br>
+            <input type="password" name="pwd" placeholder="Password"><br>
+            <button type="submit">Login</button>
+            <br><br><br>
+            <a href="">Forgot your password?</a><br><br><br>
+            <span class="signin">Need an Account?<a class="acnt" href=""> Sing in</a></span>
+         </div>
+    </div>
+        
 </body>
 
 </html>
