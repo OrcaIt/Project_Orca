@@ -116,7 +116,8 @@ a:hover {
     }
     div.left {
         margin-left: 15%;
-        padding-top: 3vh;
+        padding-top: 2vh;
+        padding-bottom: 4vh;
         position: relative;
         top: 8vh;
         width: 70%;
@@ -126,6 +127,7 @@ a:hover {
         background: rgb(37, 37, 37);
         border-radius: 12px 12px 0px 0px;
         text-align: center;
+        min-block-size: 80px;
     }
     form.right {
         position: relative;
@@ -139,6 +141,7 @@ a:hover {
         box-sizing: border-box;
         background: rgb(240, 240, 240);
         border-radius: 0px 0px 12px 12px;
+        min-block-size: 500px;
     }
     span {
         color: white;
