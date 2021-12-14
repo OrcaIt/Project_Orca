@@ -1,12 +1,10 @@
-*
-{
+* {
     margin: 0;
     font-family: 'Source Sans Pro';
 }
 
-body
-{
-    background:rgb(126, 126, 126);
+body {
+    background: rgb(126, 126, 126);
 }
 
 div {
@@ -14,9 +12,10 @@ div {
     height: 100vh;
     align-items: center;
 }
+
 div.left {
     margin-left: 15%;
-    padding-top:35vh;
+    padding-top: 35vh;
     position: relative;
     top: 8vh;
     width: 45%;
@@ -27,11 +26,12 @@ div.left {
     border-radius: 12px 0px 0px 12px;
     text-align: center;
 }
+
 form.right {
     position: relative;
     margin-right: 15%;
     padding-top: 24vh;
-    padding-left: 60px;
+    padding-left: 70px;
     top: 8vh;
     width: 25%;
     height: 80%;
@@ -40,74 +40,162 @@ form.right {
     background: rgb(240, 240, 240);
     border-radius: 0px 12px 12px 0px;
 }
-span
-{
+
+span {
     color: white;
     font-size: 3.8em;
     top: 8vh;
 }
-.rogo
-{
+
+.rogo {
     color: rgb(177, 172, 255);
     margin-right: 25px;
 }
 
-form.right h2
-{
+form.right h2 {
     color: rgb(177, 172, 255);
     font-size: 1.7em;
 }
 
-input
-{
-    width: 16vw;
+input {
+    width: 15vw;
     height: 40px;
-    margin: 30px;
+    margin: 10px;
     padding-left: 15px;
     font-size: 0.8em;
     border-radius: 5px;
     border: 1px solid;
     border-color: rgb(206, 206, 206);
-    font-family:Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif
 }
 
-button
-{
+button {
     width: 100px;
     height: 35px;
     margin-top: 25px;
-    margin-left: 11.8vw;
+    margin-left: 11.3vw;
+    margin-bottom: 80px;
     background-color: rgb(177, 172, 255);
     color: white;
     border-radius: 6px;
     border: 0px;
 }
 
-button:hover
-{
+button:hover {
     background-color: rgb(147, 144, 185);
 }
 
-a
-{
+a {
     text-decoration: none;
     color: rgb(177, 172, 255);
     margin-left: 5vw;
 }
 
-a:hover
-{
+a:hover {
     color: rgb(147, 144, 185);
 }
 
-.signin
-{
-    color:gray;
-    font-size:1em;
-    margin-left:4.3vw;
+.signin {
+    color: gray;
+    font-size: 1em;
+    margin-left: 4.3vw;
 }
 
-.acnt
-{
+.acnt {
     margin-left: 1px;
+}
+
+@media screen and (max-width: 1870px) {
+    body {
+        background: rgb(126, 126, 126);
+    }
+    div {
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+    }
+    div.left {
+        margin-left: 15%;
+        padding-top: 3vh;
+        position: relative;
+        top: 8vh;
+        width: 70%;
+        height: 14%;
+        float: top;
+        box-sizing: border-box;
+        background: rgb(37, 37, 37);
+        border-radius: 12px 12px 0px 0px;
+        text-align: center;
+    }
+    form.right {
+        position: relative;
+        margin-right: 15%;
+        padding-top: 10vh;
+        padding-left: 21%;
+        top: 8vh;
+        width: 70%;
+        height: 65%;
+        float: bottom;
+        box-sizing: border-box;
+        background: rgb(240, 240, 240);
+        border-radius: 0px 0px 12px 12px;
+    }
+    span {
+        color: white;
+        font-size: 3.8em;
+        top: 8vh;
+    }
+    .rogo {
+        color: rgb(177, 172, 255);
+        margin-right: 25px;
+    }
+    form.right h2 {
+        color: rgb(177, 172, 255);
+        font-size: 2.7em;
+        margin-left: 3%;
+    }
+    input {
+        width: 12vw;
+        height: 40px;
+        margin: 10px;
+        margin-left: 6%;
+        padding-left: 18%;
+        font-size: 1em;
+        border-radius: 5px;
+        border: 1px solid;
+        border-color: rgb(206, 206, 206);
+        font-family: Arial, Helvetica, sans-serif
+    }
+    button {
+        width: 120px;
+        height: 40px;
+        margin-top: 25px;
+        margin-left: 10vw;
+        margin-bottom: 10px;
+        font-size: 1em;
+        background-color: rgb(177, 172, 255);
+        color: white;
+        border-radius: 6px;
+        border: 0px;
+    }
+    button:hover {
+        background-color: rgb(147, 144, 185);
+    }
+    a {
+        text-decoration: none;
+        color: rgb(177, 172, 255);
+        margin-left: 8vw;
+        font-size: 1.2em;
+    }
+    a:hover {
+        color: rgb(147, 144, 185);
+    }
+    .signin {
+        color: gray;
+        font-size: 1.2em;
+        margin-left: 7vw;
+    }
+    .acnt {
+        margin-left: 1px;
+    }
 }
