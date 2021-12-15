@@ -89,6 +89,7 @@ h2
 {
     font-size: 6em;
     margin-bottom: 0;
+    padding:0;
     white-space: nowrap;
 }
 
@@ -157,6 +158,7 @@ hr
         flex-direction: column;
         align-items: flex-start;
         padding: 8px 24px;
+        z-index: 200;
     }
 
     .navbar_menu
@@ -198,6 +200,7 @@ hr
     left: 10vh;
     top: 30vh;
     text-align:left;
+    z-index: 100;
 }
 
 #main button
