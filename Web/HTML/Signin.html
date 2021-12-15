@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orca Cloud</title>
+    <script src="https://kit.fontawesome.com/384a503f7d.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" async src="../JS/signin.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../CSS/Signin.css">
+</head>
+
+<body>
+    <div>
+        <div id="user">
+            <div id="header">
+                <h2>Create User ID</h2>
+            </div>
+            <div id="main1" class="panel">
+                <h2>Enter your Information</h2>
+                <!-- name, ID, PW, E-Mail -->
+                <!--아이디, 비번, 이름, E-Mail 기입 후 다음버튼 누르면 동일 백그라운드로 E-Mail 인증 창 생성(최종 : 하나의 백그라운드, 2개의 메인창)-->
+                <input type="text" placeholder="Name"><br>
+                <input type="text" placeholder="ID"><br>
+                <input type="text" placeholder="PW"><br>
+                <input type="text" placeholder="E-Mail"><br><br><br><br>
+                <button class="button" id="okButton">NEXT</button>
+            </div>
+            <div id="main2" class="panel" hidden>
+                <h2>Access your E-Mail</h2>
+                <input type="text" placeholder="Check E-Mail">
+                <button>accept</button>
+
+            </div>
+            <div id="bottom">
+                <span class="rogo"><i class="fab fa-accusoft"></i></span><span><b>Orca Cloud</b></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
