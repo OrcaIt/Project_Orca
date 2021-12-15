@@ -11,7 +11,7 @@ body {
 
 div {
     width: 100vw;
-    height: 58vh;
+    height: 55vh;
     vertical-align: middle;
 }
 
@@ -40,7 +40,7 @@ span {
     background-color: rgb(37, 37, 37);
     margin-top: 2%;
     height: 10%;
-    width: 60%;
+    width: 25vw;
     text-align: right;
     border-radius: 0px 12px 12px 0px;
 }
@@ -62,10 +62,24 @@ label {
     margin-left: 30px;
 }
 
-input {
-    width: 330px;
+#main1 input {
+    width: 350px;
     height: 40px;
-    margin-top: 2vh;
+    margin-top: 3vh;
+    margin-left: 24vw;
+    padding-left: 15px;
+    font-size: 0.9em;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: rgb(206, 206, 206);
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#main2 input {
+    width: 350px;
+    height: 40px;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
     margin-left: 24vw;
     padding-left: 15px;
     font-size: 0.9em;
@@ -76,16 +90,16 @@ input {
 }
 
 button {
-    width: 150px;
-    height: 35px;
-    margin-top: 3vh;
-    margin-left: 30vw;
+    width: 200px;
+    height: 40px;
+    margin-top: 1vh;
+    margin-left: 28vw;
     margin-bottom: 80px;
     background-color: rgb(177, 172, 255);
     color: white;
     border-radius: 6px;
     border: 0px;
-    font-size: 1.1em;
+    font-size: 1.3em;
 }
 
 button:hover {
@@ -105,7 +119,8 @@ button:hover {
     font-size: 1.3em;
     font-style: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 22vw;
+    margin-left: -32vw;
+    text-align: center;
 }
 
 #main2 h2 {
