@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="login_alert.js"></script>
     <title>Orca Cloud</title>
     <link rel = "stylesheet" href="login.css">
 </head>
 <body>
     <header>
         <div class = "navbar">
-            <a href ="index.html"><img id = "rogo" src ="Image/nav_Logo.png" width = "280px" height= "50px"></img></a>  
+            <a href ="index.html"><img id = "rogo" src ="../Image/nav_Logo.png" width = "280px" height= "50px"></img></a>  
             <nav>       
                 <ul>
                     <li><a href = "">PRODUCT</a></li>
@@ -25,15 +24,16 @@
     <main>
         <div class = "LoginHeader">
             <a href ="login.html"><img id = "rogo" src ="Image/nav_Logo.png" width = "280px" height= "50px"></img></a>
-            <h3><b>ID 찾기</b></h3>
+            <h3><b>회원가입</b></h3>
         </div>
         <form class = "LoginBox" method = "post">
             <font color="white">
             <input type = "text" name = "name" placeholder="이름">
             <input type = "text" name = "phone" placeholder="휴대폰">
             <input type = "text" name = "birth" placeholder="생년월일">
+            <input type = "text" id = "user-id" name = "id" placeholder="ID">
             </font>
-            <button id = "checkid" type="submit" onclick=javascript:btn()>조회</button> <br>
+            <button id = "checkpw" type="submit">PW 찾기</button> <br>
             </form>
     </main>
 </body>

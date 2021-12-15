@@ -6,7 +6,7 @@
 body
 {
     margin: 0;
-    background:url('Image/Index_Main.jpg')no-repeat right bottom fixed;
+    background:url('../Image/Index_Main.jpg')no-repeat right bottom fixed;
     background-size: cover;
     font-family: 'Source Sans Pro';
 }
