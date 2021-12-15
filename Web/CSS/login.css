@@ -5,6 +5,8 @@
 
 body {
     background: rgb(126, 126, 126);
+    overflow: hidden;
+    
 }
 
 div {
@@ -88,7 +90,7 @@ button:hover {
 a {
     text-decoration: none;
     color: rgb(177, 172, 255);
-    margin-left: 5vw;
+    margin-left: 4vw;
 }
 
 a:hover {
@@ -98,7 +100,7 @@ a:hover {
 .signin {
     color: gray;
     font-size: 1em;
-    margin-left: 4.3vw;
+    margin-left: 3.5vw;
 }
 
 .acnt {
@@ -115,7 +117,6 @@ a:hover {
         align-items: center;
     }
     div.left {
-        margin-left: 15%;
         padding-top: 2vh;
         padding-bottom: 4vh;
         position: relative;
@@ -131,40 +132,40 @@ a:hover {
     }
     form.right {
         position: relative;
-        margin-right: 15%;
         padding-top: 10vh;
-        padding-left: 21%;
+        padding-left: 0;
         top: 8vh;
         width: 70%;
         height: 65%;
         float: bottom;
         box-sizing: border-box;
+        text-align: center;
         background: rgb(240, 240, 240);
         border-radius: 0px 0px 12px 12px;
         min-block-size: 500px;
+        white-space: nowrap;
     }
     span {
         color: white;
         font-size: 3.8em;
         top: 8vh;
+        white-space: nowrap;
     }
     .rogo {
         color: rgb(177, 172, 255);
-        margin-right: 25px;
     }
     form.right h2 {
         color: rgb(177, 172, 255);
-        font-size: 2.7em;
-        margin-left: 3%;
+        font-size: 1.9em;
+        white-space: nowrap;
     }
     input {
-        width: 12vw;
+        width: 17vw;
+        min-width: 300px;
         height: 40px;
-        margin: 10px;
-        margin-left: 6%;
-        padding-left: 18%;
-        font-size: 1em;
+        font-size: 0.8em;
         border-radius: 5px;
+        text-align: center;
         border: 1px solid;
         border-color: rgb(206, 206, 206);
         font-family: Arial, Helvetica, sans-serif
@@ -173,9 +174,9 @@ a:hover {
         width: 120px;
         height: 40px;
         margin-top: 25px;
-        margin-left: 10vw;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         font-size: 1em;
+        margin-left: 0;
         background-color: rgb(177, 172, 255);
         color: white;
         border-radius: 6px;
@@ -187,8 +188,10 @@ a:hover {
     a {
         text-decoration: none;
         color: rgb(177, 172, 255);
-        margin-left: 8vw;
-        font-size: 1.2em;
+        font-size: 1.1em;
+        white-space: nowrap;
+        margin-top: 20px;
+        margin-left:0;
     }
     a:hover {
         color: rgb(147, 144, 185);
@@ -196,7 +199,7 @@ a:hover {
     .signin {
         color: gray;
         font-size: 1.2em;
-        margin-left: 7vw;
+        margin-left: 0;
     }
     .acnt {
         margin-left: 1px;

@@ -89,6 +89,7 @@ h2
 {
     font-size: 6em;
     margin-bottom: 0;
+    white-space: nowrap;
 }
 
 h3
@@ -96,6 +97,7 @@ h3
     font-size: 3em;
     color: rgb(177, 172, 255);
     margin-top: 0;
+    white-space: nowrap;
 }
 
 hr
@@ -103,6 +105,7 @@ hr
     height: 3px;
     background-color: white;
     margin: 10px;
+    min-width: 900px;
 }
 
 #main p
@@ -110,6 +113,7 @@ hr
     font-size:1.3em;
     font-style: bold;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    white-space: nowrap;
 }
 
 #main button
