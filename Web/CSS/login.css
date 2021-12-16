@@ -22,6 +22,7 @@ div.left {
     top: 8vh;
     width: 45%;
     height: 80%;
+    min-height: 800px;
     float: left;
     box-sizing: border-box;
     background: rgb(37, 37, 37);
@@ -34,6 +35,7 @@ form.right {
     margin-right: 15%;
     padding-top: 24vh;
     padding-left: 70px;
+    min-height: 800px;
     top: 8vh;
     width: 25%;
     height: 80%;
@@ -57,12 +59,14 @@ span {
 form.right h2 {
     color: rgb(177, 172, 255);
     font-size: 1.7em;
+    margin-left: 0;
 }
 
 input {
-    width: 15vw;
+    width: 330px;
     height: 40px;
     margin: 10px;
+    margin-left: 0;
     padding-left: 15px;
     font-size: 0.8em;
     border-radius: 5px;
@@ -75,7 +79,7 @@ button {
     width: 100px;
     height: 35px;
     margin-top: 25px;
-    margin-left: 11.3vw;
+    margin-left: 250px;
     margin-bottom: 80px;
     background-color: rgb(177, 172, 255);
     color: white;
@@ -90,7 +94,9 @@ button:hover {
 a {
     text-decoration: none;
     color: rgb(177, 172, 255);
-    margin-left: 4vw;
+    white-space: nowrap;
+    margin-left: 5vw;
+    margin-top: 5vh;
 }
 
 a:hover {
@@ -100,14 +106,15 @@ a:hover {
 .signin {
     color: gray;
     font-size: 1em;
-    margin-left: 3.5vw;
+    margin-left: 4.2vw;
 }
 
 .acnt {
     margin-left: 1px;
 }
 
-@media screen and (max-width: 1870px) {
+@media screen and (max-width: 1870px), screen and (max-height:1024px)
+{
     body {
         background: rgb(126, 126, 126);
     }
@@ -117,12 +124,11 @@ a:hover {
         align-items: center;
     }
     div.left {
-        padding-top: 2vh;
-        padding-bottom: 4vh;
+        padding-top: 25px;
         position: relative;
         top: 8vh;
         width: 70%;
-        height: 14%;
+        max-height: 120px;
         float: top;
         box-sizing: border-box;
         background: rgb(37, 37, 37);
@@ -149,10 +155,13 @@ a:hover {
         color: white;
         font-size: 3.8em;
         top: 8vh;
+        margin-left: 20px;
         white-space: nowrap;
     }
     .rogo {
         color: rgb(177, 172, 255);
+        margin: 0;
+        white-space: nowrap;
     }
     form.right h2 {
         color: rgb(177, 172, 255);
