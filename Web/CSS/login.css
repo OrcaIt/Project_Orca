@@ -34,12 +34,12 @@ form.right {
     position: relative;
     margin-right: 15%;
     padding-top: 24vh;
-    padding-left: 70px;
     min-height: 800px;
     top: 8vh;
     width: 25%;
     height: 80%;
-    float: right;
+    float:right;
+    text-align: center;
     box-sizing: border-box;
     background: rgb(240, 240, 240);
     border-radius: 0px 12px 12px 0px;
@@ -58,7 +58,7 @@ span {
 
 form.right h2 {
     color: rgb(177, 172, 255);
-    font-size: 1.7em;
+    font-size: 2em;
     margin-left: 0;
 }
 
@@ -70,16 +70,17 @@ input {
     padding-left: 15px;
     font-size: 0.8em;
     border-radius: 5px;
+    text-align: center;
     border: 1px solid;
     border-color: rgb(206, 206, 206);
     font-family: Arial, Helvetica, sans-serif
 }
 
 button {
-    width: 100px;
-    height: 35px;
+    width: 120px;
+    height: 45px;
     margin-top: 25px;
-    margin-left: 250px;
+    margin-left: 0;
     margin-bottom: 80px;
     background-color: rgb(177, 172, 255);
     color: white;
@@ -95,7 +96,8 @@ a {
     text-decoration: none;
     color: rgb(177, 172, 255);
     white-space: nowrap;
-    margin-left: 5vw;
+    margin-left: 0;
+    font-size: 1.2em;
     margin-top: 5vh;
 }
 
@@ -106,12 +108,132 @@ a:hover {
 .signin {
     color: gray;
     font-size: 1em;
-    margin-left: 4.2vw;
+    margin-left: 0;
 }
 
 .acnt {
     margin-left: 1px;
 }
+@media screen and (max-width: 2220px)
+{
+    * {
+        margin: 0;
+        font-family: 'Source Sans Pro';
+    }
+    
+    body {
+        background: rgb(126, 126, 126);
+        overflow: hidden;
+        
+    }
+    
+    div {
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+    }
+    
+    div.left {
+        margin-left: 15%;
+        padding-top: 35vh;
+        position: relative;
+        top: 8vh;
+        width: 45%;
+        height: 80%;
+        min-height: 800px;
+        float: left;
+        box-sizing: border-box;
+        background: rgb(37, 37, 37);
+        border-radius: 12px 0px 0px 12px;
+        text-align: center;
+    }
+    
+    form.right {
+        position: relative;
+        margin-right: 15%;
+        padding-top: 24vh;
+        padding-left: 70px;
+        min-height: 800px;
+        top: 8vh;
+        width: 25%;
+        height: 80%;
+        float: right;
+        text-align: left;
+        box-sizing: border-box;
+        background: rgb(240, 240, 240);
+        border-radius: 0px 12px 12px 0px;
+    }
+    
+    span {
+        color: white;
+        font-size: 3.8em;
+        top: 8vh;
+    }
+    
+    .rogo {
+        color: rgb(177, 172, 255);
+        margin-right: 25px;
+    }
+    
+    form.right h2 {
+        color: rgb(177, 172, 255);
+        font-size: 1.7em;
+        margin-left: 0;
+    }
+    
+    input {
+        width: 330px;
+        height: 40px;
+        margin: 10px;
+        margin-left: 0;
+        padding-left: 15px;
+        font-size: 0.8em;
+        border-radius: 5px;
+        text-align: left;
+        border: 1px solid;
+        border-color: rgb(206, 206, 206);
+        font-family: Arial, Helvetica, sans-serif
+    }
+    
+    button {
+        width: 100px;
+        height: 35px;
+        margin-top: 25px;
+        margin-left: 250px;
+        margin-bottom: 80px;
+        background-color: rgb(177, 172, 255);
+        color: white;
+        border-radius: 6px;
+        border: 0px;
+    }
+    
+    button:hover {
+        background-color: rgb(147, 144, 185);
+    }
+    
+    a {
+        text-decoration: none;
+        color: rgb(177, 172, 255);
+        white-space: nowrap;
+        margin-left: 5vw;
+        margin-top: 5vh;
+    }
+    
+    a:hover {
+        color: rgb(147, 144, 185);
+    }
+    
+    .signin {
+        color: gray;
+        font-size: 1em;
+        margin-left: 4.2vw;
+    }
+    
+    .acnt {
+        margin-left: 1px;
+    }
+}
+
 
 @media screen and (max-width: 1870px), screen and (max-height:1024px)
 {
