@@ -217,6 +217,7 @@ a:hover {
         white-space: nowrap;
         margin-left: 5vw;
         margin-top: 5vh;
+        font-size: 1em;
     }
     
     a:hover {
@@ -226,7 +227,7 @@ a:hover {
     .signin {
         color: gray;
         font-size: 1em;
-        margin-left: 4.2vw;
+        margin-left: 4.5vw;
     }
     
     .acnt {

@@ -1,0 +1,133 @@
+:root{
+    --text-color: #f0f4f5;
+    --accent-color: rgb(177,172,255)
+}
+
+body
+{
+    margin: 0;
+    background:url('../Image/Index_Main.jpg')no-repeat right bottom fixed;
+    background-size: cover;
+    font-family: 'Source Sans Pro';
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar
+{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+    padding: 0px 12px;
+    z-index: 1;
+}
+
+.navbar_logo
+{
+    font-size: 32px;
+    color: white;
+    margin-left: 14px;
+}
+
+.navbar_logo i
+{
+    color: rgb(177, 172, 255);
+}
+
+.navbar_menu
+{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.4em;
+}
+
+.navbar_menu li
+{
+    padding: 5px 12px;
+    margin: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navbar_menu li:hover
+{
+    background-color: rgb(177, 172, 255);
+    border-radius: 14px;
+}
+
+.navbar_icons
+{
+    list-style: none;
+    color: white;
+    display: flex;
+    font-size: 1.6em;
+    margin: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navbar_icons li
+{
+    padding: 8px 12px;
+}
+
+.navbar_toggleBtn
+{
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 30px;
+    color: rgb(177, 172, 255)
+}
+
+@media screen and (max-width: 1870px) 
+{
+    .navbar
+    {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+        z-index: 200;
+    }
+
+    .navbar_menu
+    {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%
+    }
+
+    .navbar_menu li
+    {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar_icons
+    {
+        display: none;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar_toggleBtn
+    {
+        display: block;
+    }
+
+    .navbar_menu.active,
+    .navbar_icons.active
+    {
+        display: flex;
+    }
+}
