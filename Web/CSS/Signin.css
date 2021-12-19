@@ -9,232 +9,116 @@ body {
     overflow: hidden;
 }
 
-div {
-    width: 100vw;
-    height: 55vh;
-    vertical-align: middle;
+#canvas
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
 }
 
-span {
-    color: rgb(73, 73, 73);
-    font-size: 1.4em;
-    display: inline-flex;
+#user
+{
+    position: absolute;
+    background-color: rgb(240, 240, 240);
+    left: 0;
+    right: 0;
+    top: 10vh;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    width: 60vw;
+    min-width: 900px;
+    height: 80vh;
+    min-height: 800px;
+    border-radius: 12px 12px 12px 12px;
 }
 
-.rogo {
-    color: rgb(177, 172, 255);
-    margin-right: 10px;
-}
-
-#user {
-    background: rgb(240, 240, 240);
-    width: 1320px;
-    height: 800px;
-    margin: auto;
-    margin-top: 5%;
-    border-radius: 12px;
-}
-
-#header {
-    display: inline-flex;
-    background-color: rgb(37, 37, 37);
-    margin-top: 2%;
-    height: 10%;
-    width: 25vw;
+#header :not(#user)
+{
+    margin: 30px;
+    margin-left: 0;
+    margin-right: auto;
+    width: 40%;
+    height: 80px;
     text-align: right;
     border-radius: 0px 12px 12px 0px;
-}
-
-#header h2 {
-    margin: 15px;
-    margin-left: 10vw;
+    background-color: rgb(37, 37, 37);
     color: rgb(177, 172, 255);
-    font-size: 2.3em;
 }
 
-#under {
-    height: 10%;
+.under
+{
+    position: absolute;
     width: 98%;
+    top: 94%;
     text-align: right;
+    white-space: nowrap;
+    color:rgb(126, 126, 126);
+    margin: 0;
+    vertical-align: -20%;
 }
 
-label {
-    margin-left: 30px;
+#header p :not(#header)
+{
+    font-size: 3.4em;
+    margin-right: 30px;
 }
 
-#main1 input {
-    width: 350px;
+h2
+{
+    font-size: 2.5em;
+    margin-top: 7vh;
+    white-space: nowrap;
+    margin-bottom: 7vh;
+    color: rgb(177, 172, 255);
+}
+
+span
+{
+    font-size: 1.8em;
+}
+
+input
+{
+    width: 13vw;
+    min-width:300px;
     height: 40px;
-    margin-top: 3vh;
-    margin-left: 24vw;
-    padding-left: 15px;
-    font-size: 0.9em;
-    border-radius: 5px;
-    border: 1px solid;
-    border-color: rgb(206, 206, 206);
-    font-family: Arial, Helvetica, sans-serif
-}
-
-#main2 input {
-    width: 350px;
-    height: 40px;
-    margin-top: 5vh;
-    margin-bottom: 3vh;
-    margin-left: 24vw;
-    padding-left: 15px;
-    font-size: 0.9em;
-    border-radius: 5px;
-    border: 1px solid;
-    border-color: rgb(206, 206, 206);
-    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
     text-align: center;
+    border-color: rgb(240, 240, 240);
+    border-radius: 12px 12px 12px 12px;
 }
 
-button {
+button
+{
     width: 200px;
-    height: 40px;
-    margin-top: 1vh;
-    margin-left: 28vw;
-    margin-bottom: 80px;
-    background-color: rgb(177, 172, 255);
+    height: 50px;
+    background: rgb(177, 172, 255);
     color: white;
-    border-radius: 6px;
-    border: 0px;
-    font-size: 1.3em;
+    font-size: 1.1em;
+    border-radius: 12px 12px 12px 12px;
+    border: 0;
 }
 
 button:hover {
     background-color: rgb(147, 144, 185);
 }
 
-#main1 h2 {
-    font-size: 3em;
-    margin-bottom: 0;
-    margin-left: 20vw;
-    margin-bottom: 3vh;
-    margin-top: 5%;
-    color: rgb(177, 172, 255);
-}
-
-#main2 p {
+i
+{
     font-size: 1.3em;
-    font-style: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: -32vw;
-    text-align: center;
-    color: rgb(70,70,70);
-}
-
-#main2 h2 {
-    font-size: 4em;
-    margin-bottom: 0;
-    margin-left: 20vw;
-    margin-bottom: 2%;
-    margin-top: 10vh;
     color: rgb(177, 172, 255);
 }
 
-@media screen and(max-width:1870px) {
-    * {
-        margin: 0;
-        padding: 0;
-        font-family: 'Source Sans Pro';
-    }
-    body {
-        background: rgb(126, 126, 126);
-    }
-    div {
-        width: 100%;
-        height: 68%;
-        vertical-align: middle;
-    }
-    span {
-        color: rgb(73, 73, 73);
-        font-size: 1.4em;
-        display: inline-flex;
-    }
-    .rogo {
-        color: rgb(177, 172, 255);
-        margin-right: 10px;
-    }
-    #user {
-        background: rgb(240, 240, 240);
-        width: 1320px;
-        height: 900px;
-        margin: auto;
-        margin-top: 8%;
-        border-radius: 12px;
-    }
-    #header {
-        display: inline-flex;
-        background-color: rgb(37, 37, 37);
-        margin-top: 2%;
-        height: 10%;
-        width: 60%;
-        text-align: right;
-        border-radius: 0px 12px 12px 0px;
-    }
-    #header h2 {
-        margin: 15px;
-        margin-left: 60%;
-        color: rgb(177, 172, 255);
-        font-size: 2.3em;
-    }
-    #under {
-        height: 10%;
-        width: 98%;
-        text-align: right;
-    }
-    label {
-        margin-left: 30px;
-    }
-    input {
-        width: 330px;
-        height: 40px;
-        margin-top: 3%;
-        margin-left: 35%;
-        padding-left: 15px;
-        font-size: 0.9em;
-        border-radius: 5px;
-        border: 1px solid;
-        border-color: rgb(206, 206, 206);
-        font-family: Arial, Helvetica, sans-serif
-    }
-    button {
-        width: 150px;
-        height: 35px;
-        margin-top: 25px;
-        margin-left: 42%;
-        margin-bottom: 80px;
-        background-color: rgb(177, 172, 255);
-        color: white;
-        border-radius: 6px;
-        border: 0px;
-        font-size: 1.1em;
-    }
-    button:hover {
-        background-color: rgb(147, 144, 185);
-    }
-    #main1 h2 {
-        font-size: 3em;
-        margin-bottom: 0;
-        margin-left: 30%;
-        margin-bottom: 2%;
-        margin-top: 5%;
-        color: rgb(177, 172, 255);
-    }
-    #main2 p {
-        font-size: 1.3em;
-        font-style: bold;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        margin-left: 32%;
-    }
-    #main2 h2 {
-        font-size: 4em;
-        margin-bottom: 0;
-        margin-left: 28%;
-        margin-bottom: 2%;
-        margin-top: 10%;
-        color: rgb(177, 172, 255);
-    }
+#main2 p
+{
+    font-size: 1.4em;
+    color:rgb(70, 70, 70);
+}
+
+#main2 input
+{
+    margin-top: 4vh;
+    margin-bottom: 6vh;
 }

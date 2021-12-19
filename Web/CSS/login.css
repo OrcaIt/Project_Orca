@@ -236,7 +236,7 @@ a:hover {
 }
 
 
-@media screen and (max-width: 1870px), screen and (max-height:1024px)
+@media screen and (max-width: 1870px), screen and (max-height:800px)
 {
     body {
         background: rgb(126, 126, 126);
@@ -336,5 +336,13 @@ a:hover {
     }
     .acnt {
         margin-left: 1px;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    span
+    {
+        font-size: 3em;
     }
 }
