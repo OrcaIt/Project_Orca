@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset User's Password</title>
+    <link rel="stylesheet" href="../CSS/ResetPW.css">
+    <script src="../JS/Forgot.js" defer></script>
+    <script src="https://kit.fontawesome.com/384a503f7d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>  
+    <div id = "canvas">
+        <div id = "header">
+            <p><b>Reset Your PassWord</b></p>
+        </div>
+        <!--아이디와 이름을 입력 후 해당 정보가 DB와 일치할 경우, 비밀번호 초기화.-->
+        <!--만약 아이디/이름이 DB의 정보와 다르다면 알림창 후 페이지 초기화(PHP작업)-->
+        <div id="checkID">
+            <h3>Input your Information</h3>
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="ID"><br>
+            <button>Next</button>
+        </div>
+        <div id="ResetPW">
+            <h3>Input your New PassWord</h3>
+            <input type="text" placeholder="New Password">
+            <input type="text" placeholder="Re-Enter New Password"><br>
+            <button>Confirm</button>
+        </div>
+    </div>
+</body>
+</html>
