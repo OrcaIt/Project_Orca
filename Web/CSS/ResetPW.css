@@ -9,16 +9,13 @@ body {
     overflow: hidden;
 }
 
-#canvas
-{
+#canvas {
     position: relative;
     width: 100%;
     height: 100%;
-    
 }
 
-#user
-{
+#user {
     position: absolute;
     background-color: rgb(240, 240, 240);
     left: 0;
@@ -34,39 +31,36 @@ body {
     border-radius: 12px 12px 12px 12px;
 }
 
-#header :not(#user)
-{
+#header :not(#user) {
     margin: 30px;
     margin-left: 0;
     margin-right: auto;
-    width: 40%;
-    height: 80px;
+    width: 50%;
+    height: 69px;
     text-align: right;
     border-radius: 0px 12px 12px 0px;
     background-color: rgb(37, 37, 37);
     color: rgb(177, 172, 255);
 }
 
-.ResetPW
-{
+.ResetPW {
     position: absolute;
     width: 98%;
     top: 94%;
     text-align: right;
     white-space: nowrap;
-    color:rgb(126, 126, 126);
+    color: rgb(126, 126, 126);
     margin: 0;
     vertical-align: -20%;
 }
 
-#header p :not(#header)
-{
+#header p :not(#header) {
     font-size: 3.4em;
     margin-right: 30px;
+    white-space: nowrap;
 }
 
-h2
-{
+h3 {
     font-size: 2.5em;
     margin-top: 7vh;
     white-space: nowrap;
@@ -74,15 +68,13 @@ h2
     color: rgb(177, 172, 255);
 }
 
-span
-{
+span {
     font-size: 1.8em;
 }
 
-input
-{
+input {
     width: 13vw;
-    min-width:300px;
+    min-width: 300px;
     height: 40px;
     margin-bottom: 25px;
     text-align: center;
@@ -90,8 +82,7 @@ input
     border-radius: 12px 12px 12px 12px;
 }
 
-button
-{
+button {
     width: 200px;
     height: 50px;
     background: rgb(177, 172, 255);
@@ -105,20 +96,12 @@ button:hover {
     background-color: rgb(147, 144, 185);
 }
 
-i
-{
+i {
     font-size: 1.3em;
     color: rgb(177, 172, 255);
 }
 
-#ResetPW p
-{
+#ResetPW p {
     font-size: 1.4em;
-    color:gray;
-}
-
-#ResetPW input
-{
-    margin-top: 4vh;
-    margin-bottom: 6vh;
+    color: gray;
 }
