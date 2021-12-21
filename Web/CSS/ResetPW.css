@@ -41,9 +41,21 @@ body {
     border-radius: 0px 12px 12px 0px;
     background-color: rgb(37, 37, 37);
     color: rgb(177, 172, 255);
+    min-width: 600px;
 }
 
 .ResetPW {
+    position: absolute;
+    width: 98%;
+    top: 94%;
+    text-align: right;
+    white-space: nowrap;
+    color: rgb(126, 126, 126);
+    margin: 0;
+    vertical-align: -20%;
+}
+
+.under {
     position: absolute;
     width: 98%;
     top: 94%;
@@ -60,9 +72,9 @@ body {
     white-space: nowrap;
 }
 
-h3 {
+h2 {
     font-size: 2.5em;
-    margin-top: 7vh;
+    margin-top: 10vh;
     white-space: nowrap;
     margin-bottom: 7vh;
     color: rgb(177, 172, 255);
@@ -90,6 +102,7 @@ button {
     font-size: 1.1em;
     border-radius: 12px 12px 12px 12px;
     border: 0;
+    margin-top: 4vh;
 }
 
 button:hover {
@@ -99,6 +112,15 @@ button:hover {
 i {
     font-size: 1.3em;
     color: rgb(177, 172, 255);
+}
+
+#CheckE-Mail p {
+    font-size: 1.4em;
+    color: gray;
+}
+
+#CheckE-Mail input {
+    margin-top: 4vh;
 }
 
 #ResetPW p {
