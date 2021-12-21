@@ -76,59 +76,81 @@ a {
     color: rgb(177, 172, 255)
 }
 
-#main p {
-    font-size: 1.3em;
-    font-style: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+h2 {
+    font-size: 3.5em;
+    margin-top: 25vh;
+    margin-left: 36vw;
     white-space: nowrap;
+    margin-bottom: 7vh;
+    color: rgb(177, 172, 255);
+    z-index: -1;
 }
 
-@media screen and (max-width: 1870px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 8px 24px;
-        z-index: 200;
-    }
-    .navbar_menu {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%
-    }
-    .navbar_menu li {
-        width: 100%;
-        text-align: center;
-    }
-    .navbar_icons {
-        display: none;
-        justify-content: center;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-    }
-    .navbar_toggleBtn {
-        display: block;
-    }
-    .navbar_menu.active,
-    .navbar_icons.active {
-        display: flex;
-    }
-    #main {
-        display: inline-block;
-        position: fixed;
-        top: 20vh;
-        left: 50vh;
-        right: 50vh;
-        padding: 0;
-        text-align: center;
-        color: white;
-    }
-    #main p {
-        color: white;
-        font-size: 1.3em;
-        font-style: bold;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        white-space: nowrap;
-    }
+span {
+    font-size: 1.8em;
+}
+
+input {
+    width: 13vw;
+    min-width: 300px;
+    height: 40px;
+    margin-bottom: 25px;
+    margin-left: 41vw;
+    text-align: center;
+    border-color: rgb(240, 240, 240);
+    border-radius: 12px 12px 12px 12px;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    margin-left: 44vw;
+    background: rgb(177, 172, 255);
+    color: white;
+    font-size: 1.1em;
+    border-radius: 12px 12px 12px 12px;
+    border: 0;
+}
+
+button:hover {
+    background-color: rgb(147, 144, 185);
+}
+
+i {
+    font-size: 1.3em;
+    color: rgb(177, 172, 255);
+}
+
+#Modify p {
+    font-size: 1.4em;
+    color: gray;
+}
+
+#Modify h2 {
+    font-size: 3.5em;
+    margin-top: 10vh;
+    margin-left: 35vw;
+    white-space: nowrap;
+    margin-bottom: 7vh;
+    color: rgb(177, 172, 255);
+    z-index: -1;
+}
+
+#Modify input {
+    margin-left: 42vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+#Modify button {
+    width: 200px;
+    height: 50px;
+    background: rgb(177, 172, 255);
+    color: white;
+    font-size: 1.1em;
+    border-radius: 12px 12px 12px 12px;
+    border: 0;
+    margin-top: 4vh;
+    margin-left: 45vw;
 }

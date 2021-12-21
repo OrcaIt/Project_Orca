@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orca Cloud</title>
-    <link rel="stylesheet" href="../CSS/Company.css">
-    <script src="../JS/toggle.js" defer></script>
+    <link rel="stylesheet" href="../CSS/Modify.css">
+    <script src="../JS/Modify.js" defer></script>
     <script src="https://kit.fontawesome.com/384a503f7d.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,7 +38,17 @@
         </a>
     </nav>
     <div id="main">
-        Orca Cloud is Storage Service. Users get 15 gigabytes by default.
+        <h2><b>Input Your Password</b></h2>
+        <input type="text" placeholder="Your Password"><br>
+        <button class="button" id="okButton">Modify</button>
+    </div>
+    <div id="Modify" hidden>
+        <h2>Modify Your Information</h2>
+        <input type="text" placeholder="Name"><br>
+        <input type="text" placeholder="ID" readonly><br>
+        <input type="text" placeholder="Password"><br>
+        <input type="text" placeholder="E-Mail"><br>
+        <button onclick="location.href='login.html'">Modify</button>
     </div>
 </body>
 
