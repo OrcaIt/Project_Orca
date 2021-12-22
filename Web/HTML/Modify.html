@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orca Cloud</title>
+    <link rel="stylesheet" href="/CSS/Modify.css">
+    <script src="../JS/Modify.js" defer></script>
+    <script src="https://kit.fontawesome.com/384a503f7d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar_logo">
+            <i class="fab fa-accusoft"></i>
+            <a href="index.html">Orca Cloud</a>
+        </div>
+        <ul class="navbar_menu">
+            <li><a href="Product.html">PRODUCT</a></li>
+            <li><a href="Pricing.html">PRICING</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="Company.html">COMPANY</a></li>
+        </ul>
+        <ul class="navbar_icons">
+            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a></i>
+            </li>
+            <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></a></i>
+            </li>
+            <li><a href="login.html"><i class="fas fa-user"></i></a></li>
+        </ul>
+        <a href="#" class="navbar_toggleBtn">
+            <i class="fas fa-bars"></i>
+        </a>
+    </nav>
+    <div id="main">
+        <h2><b>Input Your Password</b></h2>
+        <input type="text" placeholder="Your Password"><br>
+        <button class="button" id="okButton">Modify</button>
+    </div>
+    <!--현재 로그인 중인 ID와 입력된 PW가 DB의 정보와 일치하다면 다음페이지이동
+    만약 불일치할 경우, 경고창(비밀번호가 일치하지 않습니다.)생성 후 화면 초기화-->
+    <div id="Modify" hidden>
+        <h2>Modify Your Information</h2>
+        <input type="text" placeholder="Name"><br>
+        <input type="text" placeholder="ID" readonly><br>
+        <input type="text" placeholder="Password"><br>
+        <input type="text" placeholder="E-Mail"><br>
+        <button onclick="location.href='login.html'">Modify</button>
+    </div>
+</body>
+
+</html>
