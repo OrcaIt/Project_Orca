@@ -44,7 +44,7 @@ body {
     min-width: 600px;
 }
 
-.ResetPW {
+.FindID {
     position: absolute;
     width: 98%;
     top: 94%;
@@ -73,8 +73,8 @@ body {
 }
 
 h2 {
-    font-size: 2.5em;
-    margin-top: 10vh;
+    font-size: 3.3em;
+    margin-top: 20vh;
     white-space: nowrap;
     margin-bottom: 7vh;
     color: rgb(177, 172, 255);
@@ -92,6 +92,8 @@ input {
     text-align: center;
     border-color: rgb(240, 240, 240);
     border-radius: 12px 12px 12px 12px;
+    font-size: 1.2em;
+    color: rgb(185, 185, 185);
 }
 
 button {
@@ -114,17 +116,41 @@ i {
     color: rgb(177, 172, 255);
 }
 
+#CheckE-Mail h2 {
+    font-size: 3.3em;
+    margin-top: 20vh;
+    white-space: nowrap;
+    margin-bottom: 5vh;
+    color: rgb(177, 172, 255);
+}
+
 #CheckE-Mail p {
     font-size: 1.4em;
     color: gray;
 }
 
 #CheckE-Mail input {
-    margin-top: 4vh;
-    margin-bottom: 4vh;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    font-size: 1.2em;
+    color: rgb(185, 185, 185);
 }
 
-#ResetPW p {
+#FindID p {
     font-size: 1.4em;
     color: gray;
+}
+
+#FindID h2 {
+    font-size: 3.3em;
+    margin-top: 26vh;
+    white-space: nowrap;
+    margin-bottom: 7vh;
+    color: rgb(177, 172, 255);
+}
+
+#FindID input {
+    margin-bottom: 3vh;
+    font-size: 1.2em;
+    color: red;
 }

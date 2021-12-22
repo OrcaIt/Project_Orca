@@ -73,10 +73,10 @@ body {
 }
 
 h2 {
-    font-size: 2.5em;
-    margin-top: 10vh;
+    font-size: 3.3em;
+    margin-top: 20vh;
     white-space: nowrap;
-    margin-bottom: 7vh;
+    margin-bottom: 5vh;
     color: rgb(177, 172, 255);
 }
 
@@ -114,17 +114,41 @@ i {
     color: rgb(177, 172, 255);
 }
 
+#checkID h2 {
+    font-size: 3.3em;
+    margin-top: 24vh;
+    white-space: nowrap;
+    margin-bottom: 5vh;
+    color: rgb(177, 172, 255);
+}
+
+#CheckE-Mail h2 {
+    font-size: 3.3em;
+    margin-top: 23vh;
+    white-space: nowrap;
+    margin-bottom: 3vh;
+    color: rgb(177, 172, 255);
+}
+
 #CheckE-Mail p {
     font-size: 1.4em;
     color: gray;
 }
 
 #CheckE-Mail input {
-    margin-top: 4vh;
-    margin-bottom: 4vh;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
 }
 
 #ResetPW p {
     font-size: 1.4em;
     color: gray;
+}
+
+#ResetPW h2 {
+    font-size: 3.3em;
+    margin-top: 24vh;
+    white-space: nowrap;
+    margin-bottom: 5vh;
+    color: rgb(177, 172, 255);
 }

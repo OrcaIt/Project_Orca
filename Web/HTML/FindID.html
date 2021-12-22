@@ -17,9 +17,6 @@
 <body>
     <div id="canvas">
         <div id="user">
-            <div id="header">
-                <p><b>Find User's ID</b></p>
-            </div>
             <!--이름과 이메일 입력 후 이메일 인증 후 본인 확인되면 페이지에서 바로 ID 출력-->
             <!--만약 본인확인에 실패한다면 에러창 출력 후 화면 초기화(PHP 작업 예상)-->
             <div id="checkName">
@@ -41,8 +38,8 @@
             </div>
             <div id="FindID" hidden>
                 <h2>Find Your ID</h2>
-                <p><b>Your ID is 00000000</b></p>
-                <!--00000000 부분은 ID출력 부분으로 js혹은 php로 DB의 ID를 읽어와 출력할 예정-->
+                <input type="text" placeholder="user's ID" readonly><br>
+                <!--위의 input부분은 ID출력 부분으로 js혹은 php로 DB의 ID를 읽어와 출력할 예정-->
                 <button onclick="location.href='login.html'">Confirm</button>
             </div>
         </div>
