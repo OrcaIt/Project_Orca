@@ -31,19 +31,6 @@ body {
     border-radius: 12px 12px 12px 12px;
 }
 
-#header :not(#user) {
-    margin: 30px;
-    margin-left: 0;
-    margin-right: auto;
-    width: 50%;
-    height: 69px;
-    text-align: right;
-    border-radius: 0px 12px 12px 0px;
-    background-color: rgb(37, 37, 37);
-    color: rgb(177, 172, 255);
-    min-width: 600px;
-}
-
 .FindID {
     position: absolute;
     width: 98%;
@@ -66,14 +53,8 @@ body {
     vertical-align: -20%;
 }
 
-#header p :not(#header) {
-    font-size: 3.4em;
-    margin-right: 30px;
-    white-space: nowrap;
-}
-
 h2 {
-    font-size: 3.3em;
+    font-size: 2.5em;
     margin-top: 20vh;
     white-space: nowrap;
     margin-bottom: 7vh;
@@ -92,8 +73,9 @@ input {
     text-align: center;
     border-color: rgb(240, 240, 240);
     border-radius: 12px 12px 12px 12px;
-    font-size: 1.2em;
-    color: rgb(185, 185, 185);
+    font-size: 0.8em;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 button {
@@ -112,12 +94,12 @@ button:hover {
 }
 
 i {
-    font-size: 1.3em;
+    font-size: 1.1em;
     color: rgb(177, 172, 255);
 }
 
 #CheckE-Mail h2 {
-    font-size: 3.3em;
+    font-size: 2.5em;
     margin-top: 20vh;
     white-space: nowrap;
     margin-bottom: 5vh;
@@ -132,8 +114,9 @@ i {
 #CheckE-Mail input {
     margin-top: 2vh;
     margin-bottom: 3vh;
-    font-size: 1.2em;
-    color: rgb(185, 185, 185);
+    font-size: 0.8em;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #FindID p {
@@ -151,6 +134,9 @@ i {
 
 #FindID input {
     margin-bottom: 3vh;
-    font-size: 1.2em;
-    color: red;
+    font-size: 0.8em;
+    border: 0;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    pointer-events: none;
 }
