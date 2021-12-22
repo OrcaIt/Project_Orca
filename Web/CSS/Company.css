@@ -1,24 +1,21 @@
-:root{
+:root {
     --text-color: #f0f4f5;
-    --accent-color: rgb(177,172,255)
+    --accent-color: rgb(177, 172, 255)
 }
 
-body
-{
+body {
     margin: 0;
-    background:url('../Image/Index_Main.jpg')no-repeat right bottom fixed;
+    background: url('../Image/Index_Main.jpg')no-repeat right bottom fixed;
     background-size: cover;
     font-family: 'Source Sans Pro';
 }
 
-a
-{
+a {
     text-decoration: none;
     color: white;
 }
 
-.navbar
-{
+.navbar {
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -28,42 +25,36 @@ a
     z-index: 1;
 }
 
-.navbar_logo
-{
+.navbar_logo {
     font-size: 32px;
     color: white;
     margin-left: 14px;
 }
 
-.navbar_logo i
-{
+.navbar_logo i {
     color: rgb(177, 172, 255);
 }
 
-.navbar_menu
-{
+.navbar_menu {
     display: flex;
     list-style: none;
     padding-left: 0;
     font-size: 1.4em;
 }
 
-.navbar_menu li
-{
+.navbar_menu li {
     padding: 5px 12px;
     margin: 40px;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.navbar_menu li:hover
-{
+.navbar_menu li:hover {
     background-color: rgb(177, 172, 255);
     border-radius: 14px;
 }
 
-.navbar_icons
-{
+.navbar_icons {
     list-style: none;
     color: white;
     display: flex;
@@ -73,13 +64,11 @@ a
     margin-bottom: 0;
 }
 
-.navbar_icons li
-{
+.navbar_icons li {
     padding: 8px 12px;
 }
 
-.navbar_toggleBtn
-{
+.navbar_toggleBtn {
     display: none;
     position: absolute;
     right: 32px;
@@ -87,47 +76,69 @@ a
     color: rgb(177, 172, 255)
 }
 
-@media screen and (max-width: 1870px) 
-{
-    .navbar
-    {
+#main {
+    display: inline-block;
+    position: fixed;
+    top: 20vh;
+    left: 50vh;
+    right: 50vh;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+#main p {
+    font-size: 1.3em;
+    font-style: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 1870px) {
+    .navbar {
         flex-direction: column;
         align-items: flex-start;
         padding: 8px 24px;
         z-index: 200;
     }
-
-    .navbar_menu
-    {
+    .navbar_menu {
         display: none;
         flex-direction: column;
         align-items: center;
         width: 100%
     }
-
-    .navbar_menu li
-    {
+    .navbar_menu li {
         width: 100%;
         text-align: center;
     }
-
-    .navbar_icons
-    {
+    .navbar_icons {
         display: none;
         justify-content: center;
         width: 100%;
         padding: 0;
         margin: 0;
     }
-
-    .navbar_toggleBtn
-    {
+    .navbar_toggleBtn {
         display: block;
     }
-
     .navbar_menu.active,
-    .navbar_icons.active
-    {
+    .navbar_icons.active {
         display: flex;
+    }
+    #main {
+        display: inline-block;
+        position: fixed;
+        top: 20vh;
+        left: 50vh;
+        right: 50vh;
+        padding: 0;
+        text-align: center;
+        color: white;
+    }
+    #main p {
+        font-size: 1.3em;
+        font-style: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        white-space: nowrap;
     }
 }

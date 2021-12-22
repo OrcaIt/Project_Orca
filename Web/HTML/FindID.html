@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find User's ID</title>
+    <link rel="stylesheet" href="../CSS/FindID.css">
+    <script src="../JS/FindID.js" defer></script>
+    <script src="https://kit.fontawesome.com/384a503f7d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="canvas">
+        <div id="user">
+            <div id="header">
+                <p><b>Find User's ID</b></p>
+            </div>
+            <!--이름과 이메일 입력 후 이메일 인증 후 본인 확인되면 페이지에서 바로 ID 출력-->
+            <!--만약 본인확인에 실패한다면 에러창 출력 후 화면 초기화(PHP 작업 예상)-->
+            <div id="checkName">
+                <h2>Input your Information</h2>
+                <input type="text" placeholder="Name"><br>
+                <input type="text" placeholder="E-Mail"><br>
+                <button class="button" id="okButton">Next</button>
+            </div>
+            <div class="under">
+                <span class="rogo"><i class="fab fa-accusoft"></i>&nbsp;<b><l>Orca Cloud</l></b></span>
+            </div>
+            <div id="CheckE-Mail" hidden>
+                <h2>Check Your E-Mail</h2><br>
+                <p><b>A verification code has been sent</b></p>
+                <br>
+                <p><b>Enter the verification code in the box below</b></p>
+                <input type="text" placeholder="Input Verification code"><br>
+                <button class="button" id="Next">Next</button>
+            </div>
+            <div id="FindID" hidden>
+                <h2>Find Your ID</h2>
+                <p><b>Your ID is 00000000</b></p>
+                <!--00000000 부분은 ID출력 부분으로 js혹은 php로 DB의 ID를 읽어와 출력할 예정-->
+                <button onclick="location.href='login.html'">Confirm</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
