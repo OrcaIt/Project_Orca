@@ -140,3 +140,8 @@ i {
     font-family: Arial, Helvetica, sans-serif;
     pointer-events: none;
 }
+
+input:focus
+{
+    outline: none;
+}

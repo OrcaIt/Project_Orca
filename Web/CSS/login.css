@@ -3,6 +3,11 @@
     font-family: 'Source Sans Pro';
 }
 
+input:focus
+{
+    outline: none;
+}
+
 body {
     background: rgb(126, 126, 126);
     overflow: hidden;
