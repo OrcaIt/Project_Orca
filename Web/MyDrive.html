@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href ="../CSS/MyDrive.css">
+    <link rel ="stylesheet" href="../CSS/MyDrive.css">
     <script src="https://kit.fontawesome.com/384a503f7d.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,31 +15,38 @@
     <header>
         <i class="fab fa-accusoft"></i>
         <a href="index.html">Orca Cloud</a>
+        <div id = "user">
+            <i class="fas fa-user"></i><a href ="">user #01022130</a>
+        </div>
     </header>
-    <main>
-        <aside>
-              
-        </aside>
-        <section id = "search_sec">
-            <input type=text placeholder="Search">
-            <button><i class="fas fa-search"></i></button>   
-        </section>
-        <section id = "folder_sec">
-            <button><i class="fas fa-folder"></i><br><span>item</span></button>
-            <button><i class="fas fa-folder"></i><br><span>item</span></button>
-            <button><i class="fas fa-folder"></i><br><span>item</span></button>
-            <button><i class="fas fa-folder"></i><br><span>item</span></button>
-            <button><i class="fas fa-folder"></i><br><span>item</span></button>
-            <button><i class="fas fa-folder"></i><br><span>item</span></button>
-            <button><i class="fas fa-folder"></i><br><span>item</span></button>
-            <button><i class="fas fa-folder"></i><br><span>item</span></button>
-            <button><i class="fas fa-folder"></i><br><span>item</span></button>
-            <button><i class="fas fa-folder"></i><br><span>item</span></button>
-        </section>
+    <main> 
+          <aside>
+            <div id = "btn">
+                <button id = "new"><a href =""><i class="fas fa-file-upload"></i> New File</a></button>
+                <button><i class="fab fa-google-drive"></i>My Drive</button>
+                <button><i class="fas fa-share-alt-square"></i> Share Folder</button>
+                <button><i class="fas fa-bookmark"></i>Important Folder </button>
+                <button><i class="fas fa-trash-alt"></i>Trash</button>
+            </div>
+            <div id = "stroge">
+                <span>Storage Capacity</span>
+                <p><i class="fas fa-cloud"></i>0GB out of 15GB</p>
+                <button><a href ="">Get More</a></button>
+            </div>
+          </aside>
+          <section>
+            <div id = "search">
+                <input type="search" placeholder="Search">
+                <button><i class="fas fa-search"></i></button>
+                
+            </div>
+            <div id = "folder">
+                
+            </div>
+          </section>
+          <article>
             
-        <section id = "info_sec">
-
-        </section>
+          </article>
     </main>
 </body>
 </html>
