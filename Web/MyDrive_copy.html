@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel ="stylesheet" href="../CSS/MyDrive.css">
-    <script src="JS/Upload.js"></script>
+    <link rel ="stylesheet" href="CSS/MyDrive_copy.css">
+    <script src ="JS/Upload.js"></script>
     <script src="https://kit.fontawesome.com/384a503f7d.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
     <title>Orca Cloud Drive</title>
+    
 </head>
 <body>
     <header>
@@ -22,8 +23,11 @@
     </header>
     <main> 
           <aside>
+            <form class="filebox" name="upload" > 
+                <label for="ex_file"><i class="fas fa-file-upload"></i>File Upload</label> 
+                <input type="file" id="ex_file" onchange="File_Upload(this);"> 
+            </form>
             <div id = "btn">
-                <button id = "new" onclick="File_Upload()"><i class="fas fa-file-upload"></i>New File</button>
                 <button><i class="fab fa-google-drive"></i>My Drive</button>
                 <button><i class="fas fa-share-alt-square"></i> Share Folder</button>
                 <button><i class="fas fa-bookmark"></i>Important Folder </button>
@@ -49,5 +53,11 @@
             
           </article>
     </main>
+    <script language="javascript">
+        function sendfile(){
+           getElementById("upload").submit();
+           alert("전송완료");
+           }
+     </script>
 </body>
 </html>
