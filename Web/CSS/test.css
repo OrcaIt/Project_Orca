@@ -7,10 +7,11 @@ input:focus {
     outline: none;
 }
 
-body {
-    margin: 0;
-    background-size: cover;
-    font-family: 'Source Sans Pro';
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
 }
 
 a {
@@ -18,65 +19,48 @@ a {
     color: white;
 }
 
-.navbar {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(34, 34, 34);
-    padding: 0px 12px;
-    z-index: 1;
+#btn button {
+    text-align: left;
+    padding-left: 30px;
+    color: rgb(131, 131, 131);
+    font-size: 1.3em;
+    width: 100%;
+    height: 45px;
+    border: 0;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: rgb(235, 235, 235);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: white;
 }
 
-.navbar_logo {
-    font-size: 32px;
-    color: white;
-    margin-left: 14px;
+#btn button i {
+    font-size: 1.3em;
+    margin-right: 15px;
 }
 
-.navbar_logo i {
+#btn button:hover {
     color: rgb(177, 172, 255);
 }
 
-.navbar_menu {
+aside {
     display: flex;
-    list-style: none;
-    padding-left: 0;
-    font-size: 1.4em;
+    flex-direction: column;
+    text-align: center;
+    border-right: 1px solid;
+    border-color: rgb(204, 204, 204);
+    width: 20%;
+    min-width: 250px;
 }
 
-.navbar_menu li {
-    padding: 5px 12px;
-    margin: 40px;
-    margin-top: 0;
-    margin-bottom: 0;
+aside a:hover {
+    color: rgb(177, 172, 255);
 }
 
-.navbar_menu li:hover {
-    background-color: rgb(177, 172, 255);
-    border-radius: 14px;
-}
-
-.navbar_icons {
-    list-style: none;
-    color: white;
-    display: flex;
-    font-size: 1.6em;
-    margin: 20px;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.navbar_icons li {
-    padding: 8px 12px;
-}
-
-.navbar_toggleBtn {
-    display: none;
-    position: absolute;
-    right: 32px;
-    font-size: 30px;
-    color: rgb(177, 172, 255)
+aside a {
+    text-decoration: none;
+    color: rgb(250, 250, 250);
 }
 
 h2 {
@@ -124,13 +108,8 @@ i {
     color: rgb(177, 172, 255);
 }
 
-#Modify p {
-    font-size: 1.4em;
-    color: gray;
-}
-
 #Modify h2 {
-    font-size: 3.5em;
+    font-size: 3em;
     margin-top: 7vh;
     margin-left: 37vw;
     white-space: nowrap;
@@ -149,34 +128,15 @@ i {
     z-index: -1;
 }
 
-#Modify input {
-    margin-left: 42vw;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    text-align: center;
-}
-
-#Modify button {
-    width: 200px;
-    height: 50px;
-    background: rgb(177, 172, 255);
-    color: white;
-    font-size: 1.1em;
-    border-radius: 12px 12px 12px 12px;
-    border: 0;
-    margin-top: 4vh;
-    margin-left: 45vw;
-}
-
 #Profile h3 {
     font-size: 2em;
     margin-top: 2vh;
-    margin-left: 28vw;
+    margin-left: 30vw;
 }
 
 #Profile input {
-    margin-left: 22vw;
-    margin-top: 1vh;
+    margin-left: 20vw;
+    margin-top: 3vh;
     margin-bottom: 2vh;
     text-align: center;
 }
@@ -190,14 +150,15 @@ i {
     border-radius: 12px 12px 12px 12px;
     border: 0;
     margin-top: 2vh;
-    margin-left: 25vw;
+    margin-left: 23vw;
     margin-bottom: 4vh;
 }
 
 #Profile {
-    width: 58vw;
+    width: 55vw;
+    height: 40vh;
     display: inline-table;
-    margin-left: 20vw;
+    margin-left: 22vw;
     vertical-align: center;
     border: 1px solid grey;
     border-radius: 8px;
