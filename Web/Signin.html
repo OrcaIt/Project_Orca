@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orca Cloud</title>
     <script src="https://kit.fontawesome.com/384a503f7d.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" async src="../JS/signin.js"></script>
+    <script type="text/javascript" async src="signin.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../CSS/Signin.css">
@@ -15,35 +15,28 @@
 </head>
 
 <body>
-    <div id="canvas">
-        <div id="user">
-            <div id="header">
-                <p><b>Create User</b></p>
-            </div>
-            <div id="main1">
-                <h2>Enter your Information</h2>
-                <!-- name, ID, PW, E-Mail -->
-                <!--아이디, 비번, 이름, E-Mail 기입 후 다음버튼 누르면 동일 백그라운드로 E-Mail 인증 창 생성(최종 : 하나의 백그라운드, 2개의 메인창)-->
-                <input type="text" placeholder="Name"><br>
-                <input type="text" placeholder="ID"><br>
-                <input type="text" placeholder="PW"><br>
-                <input type="text" placeholder="E-Mail"><br><br><br>
-                <button class="button" id="okButton">Next</button>
-            </div>
-
-            <div id="main2" hidden>
-                <h2>Check your E-Mail</h2><br>
-                <p>A verification code has been sent</p>
-                <br>
-                <p>Enter the verification code in the box below</p>
-                <input type="text" placeholder="Code"><br>
-                <button onclick="location.href = 'login.html'">Accept</button>
-            </div>
-            <div class="under">
-                <span class="rogo"><i class="fab fa-accusoft"></i>&nbsp;<b><l>Orca Cloud</l></b></span>
-            </div>
-        </div>
-    </div>
+    <main>
+        <body>     
+            <div id = title>
+                <i class="fab fa-accusoft"></i>
+                <a href="index.html">Orca Cloud</a>
+            </div>   
+                <form id = "user">
+                    <input type ="text" id = "first_name" placeholder="First Name" class="name" name="F_name">
+                    <input type ="text" id ="last_name" placeholder="Last Name" class = "name" name = "L_name">
+                    <br><hr>
+                    <input tpye ="text" name = "id" id = "id" maxlength="12" placeholder="ID"><button id = "check">Check</button>
+                    <hr>
+                    <input type ="password" class = "pwd" maxlength="16" name = "pwd" placeholder="Password">
+                    <p>Combine letters, numbers, and symbols to use at least 8 characters.</p>
+                    <input type ="password" class = "pwd" maxlength="16" name = "chk_pwd" placeholder="Check Password">
+                    <hr>
+                    <input type ="email" id = "e-mail" name ="mail" placeholder="e-mail"><button id = "check">Check</button>
+                    <input type ="text" name ="Authen_number" placeholder="Authentication number">
+                    <hr>
+                    <input type="submit" value="Submit" id = "submit_btn">
+                </form>
+    </main>
 </body>
 
 </html>
