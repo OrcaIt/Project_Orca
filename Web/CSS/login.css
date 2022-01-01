@@ -106,6 +106,17 @@ a {
     margin-top: 5vh;
 }
 
+div.left a
+{
+    color: white;
+    text-decoration: none;
+}
+
+div.left a:hover
+{
+    color:white;
+}
+
 a:hover {
     color: rgb(147, 144, 185);
 }
