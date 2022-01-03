@@ -7,11 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orca Cloud</title>
     <script src="https://kit.fontawesome.com/384a503f7d.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" async src="signin.js"></script>
+    <script type="text/javascript" async src="/JS/signin.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../CSS/Signin.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <script language="javascript">
+        function submit(){
+            alert("hi");
+        }
+
+
+    </script>
 </head>
 
 <body>
@@ -20,10 +27,17 @@
             <div id = title>
                 <i class="fab fa-accusoft"></i>
                 <a href="/index.html">Orca Cloud</a>
-            </div>   
-                <form id = "user" method ="post" target="login.html">
+<<<<<<< HEAD
+            </div>
+                <form name="asdf" id = "user" method ="post">
                     <input type ="text" id = "first_name" placeholder="First Name" class="name" name="F_name">
                     <input type ="text" id ="last_name" placeholder="Last Name" class = "name" name = "L_name">
+=======
+            </div>   
+                <form name ="login_form" id = "user" method ="post" action ="#" target ="_blank" onsubmit="return check_form();">
+                    <input type ="text" id = "first_name" placeholder="First Name" class="name" name="Fname">
+                    <input type ="text" id ="last_name" placeholder="Last Name" class = "name" name = "Lname">
+>>>>>>> 76c359c2243e74bfa4ac8ddc3c9ee36fbed1a7ea
                     <br><hr>
                     <input tpye ="text" name = "id" id = "id" maxlength="12" placeholder="ID"><button id = "check" onclick="" type="button">Check</button>
                     <hr>
@@ -32,9 +46,13 @@
                     <input type ="password" class = "pwd" maxlength="16" name = "chk_pwd" placeholder="Check Password">
                     <hr>
                     <input type ="email" id = "e-mail" name ="mail" placeholder="e-mail"><button id = "check" type ="button" onclick="">Check</button>
-                    <input type ="text" name ="Authen_number" placeholder="Authentication number">
+                    <input type ="text" id ="Authen_number" placeholder="Authentication number">
                     <hr>
-                    <input type="submit" value="Submit" id = "submit_btn" onclick="window.location.href='login.html'">
+<<<<<<< HEAD
+                    <input type="button" value="Submit"onclick="submit()">
+=======
+                    <input type="submit" value="Submit" id = "submit_btn"> 
+>>>>>>> 76c359c2243e74bfa4ac8ddc3c9ee36fbed1a7ea
                 </form>
     </main>
 </body>
