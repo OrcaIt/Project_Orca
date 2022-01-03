@@ -1,0 +1,99 @@
+body
+{
+    margin: 0;
+    background-color: white;
+    background-size: cover;
+    font-family: 'Source Sans Pro';
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar
+{
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+    padding: 8px;
+}
+
+.navbar_logo
+{
+    font-size: 32px;
+    color: white;
+    margin-left: 14px;
+}
+
+.navbar_logo i
+{
+    color: rgb(177, 172, 255);
+}
+
+#card
+{
+    display: block;
+    border: 1px solid;
+    width: 50%;
+    border-color: rgba(216, 216, 216, 0.712);
+    border-radius: 12px 12px 12px 12px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 130px;
+    left: 0;
+    right: 0;
+    min-width: 900px;
+}
+
+input
+{
+    width: 100px;
+    height: 35px;
+    border-radius: 4px 4px 4px 4px;
+    border: 1px solid;
+    text-align: center;
+    border-color: rgb(184, 184, 184);
+    margin: 10px;
+    font-size: 1.0em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input:focus
+{
+    outline: none;
+}
+
+#submit
+{
+    margin-top: 40px;
+    width: 90px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    background-color: rgb(85, 85, 85);
+    cursor: pointer;
+    border: 0px;
+    font-size: 1em;
+    font-family: 'Source Sans Pro';
+    border-radius: 4px 4px 4px 4px;
+}
+
+#card p
+{
+    text-align: left;
+    margin-left: 100px;
+    font-size: 1.4em;
+    color: rgb(109, 109, 109)
+}
+
+#name
+{
+    padding: 0px 12px;
+}
