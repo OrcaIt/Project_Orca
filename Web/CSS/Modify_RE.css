@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro';
+}
+
+body {
+    background: rgb(126, 126, 126);
+    overflow: hidden;
+    text-align: center;
+}
+
+main
+{
+    width: 100vw;
+    height: 100vh;
+}
+
+#title
+{
+    position: relative;
+    display: block;
+    font-size: 2.5em;
+    top: 13vh;
+    left: 0;
+    right: 0;
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-width: 800px;
+    margin: auto;
+    background-color: rgb(37, 37, 37);
+    border-radius: 12px 12px 0px 0px;
+}
+
+
+#title i
+{
+    color:rgb(177, 172, 255);
+}
+
+#title a
+{
+    color:rgb(240, 240, 240);
+    text-decoration: none;
+}
+
+#user
+{
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: block;
+    top: 13vh;
+    left:0;
+    right: 0;
+    margin: auto;
+    width: 50%;
+    height: 600px;
+    min-width: 800px;
+    border-radius: 0px 0px 12px 12px;
+    background-color: white;
+    text-align: left;
+    white-space: nowrap;
+}
+#modify
+{
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: block;
+    top: 13vh;
+    left:0;
+    right: 0;
+    margin: auto;
+    width: 50%;
+    height: 600px;
+    min-width: 800px;
+    border-radius: 0px 0px 12px 12px;
+    background-color: white;
+    text-align: left;
+    white-space: nowrap;
+}
+
+input
+{
+    display: block;
+    width: 300px;
+    height: 35px;
+    padding-left: 15px;
+    border-radius: 2px 2px 2px 2px;
+    border: 1px solid;
+    text-align: left;
+    border-color: rgb(196, 196, 196);
+    margin: 20px;
+    font-size: 0.8em;
+    margin-left: 5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(80, 80, 80);
+    box-shadow: none;
+}
+
+input:focus
+{
+    outline: none;
+    
+}
+hr
+{
+    background-color:rgb(236, 236, 236);
+    border: 0;
+    height: 1px;
+}
+#modify p
+{
+    color:rgb(75, 75, 75);
+    font-size: 0.8em;
+    margin-left: 5vw;
+}
+
+#modify button{
+    width: 100px;
+    height: 25px;
+    margin-left: 5vw;
+    background: rgb(187, 187, 187);
+    color: white;
+    font-size: 1.1em;
+    border-radius: 4px 4px 4px 4px;
+    border: 0;
+}
+
+#modify h2{
+    font-size: 1.5em;
+    margin-left: 19vw;
+    white-space: nowrap;
+    color: black;
+}

@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-document.getElementById("okButton")
-    .addEventListener("click", function() {
-        document.getElementById("main1").hidden = true;
-        document.getElementById("main2").hidden = false;
-    }, false);
-function checkValue(){
-    var form = document.userInfo;
-=======
 function check_form() {
     var userId = document.getElementById('id');
     var Fname = document.getElementById('first_name');
@@ -62,5 +53,4 @@ function check_form() {
         console.log("SUBMIT")
         return true;
     }
->>>>>>> 76c359c2243e74bfa4ac8ddc3c9ee36fbed1a7ea
 }
