@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro';
+}
+
+body {
+    background: url('/assets/img/header-bg.jpg')no-repeat right bottom fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+main
+{
+    width: 100vw;
+    height: 100vh;
+}
+
+#title
+{
+    opacity: 90%;
+    position: relative;
+    display: block;
+    font-size: 2.5em;
+    top: 13vh;
+    left: 0;
+    right: 0;
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-width: 800px;
+    margin: auto;
+    background-color: rgb(37, 37, 37);
+    border-radius: 12px 12px 0px 0px;
+}
+
+
+#title i
+{
+    color:rgb(177, 172, 255);
+}
+
+#title a
+{
+    color:rgb(240, 240, 240);
+    text-decoration: none;
+}
+
+#user
+{
+    opacity: 90%;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: block;
+    top: 13vh;
+    left:0;
+    right: 0;
+    margin: auto;
+    width: 50%;
+    height: 600px;
+    min-width: 800px;
+    border-radius: 0px 0px 12px 12px;
+    background-color: white;
+    text-align: left;
+    white-space: nowrap;
+}
+
+#check
+{
+    width: 60px;
+    height: 35px;
+    color: white;
+    background-color: rgb(85, 85, 85);
+    cursor: pointer;
+    border: 0px;
+    font-size: 0.8em;
+    border:1px solid rgb(85, 85, 85);
+    border-radius: 0px 4px 4px 0px;
+}
+
+
+#check:hover
+{
+    color:rgb(177, 172, 255);
+}
+
+input
+{
+    display: block;
+    width: 300px;
+    height: 35px;
+    padding-left: 15px;
+    border-radius: 2px 2px 2px 2px;
+    border: 1px solid;
+    text-align: left;
+    border-color: rgb(196, 196, 196);
+    margin: 20px;
+    font-size: 0.8em;
+    margin-left: 5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(80, 80, 80);
+    box-shadow: none;
+}
+
+input:focus
+{
+    outline: none;
+    
+}
+
+#id, #e-mail
+{
+    display: inline-block;
+    margin-right: 0;
+    border-radius: 4px 0px 0px 4px;
+}
+
+#e-mail
+{
+    margin-bottom: 15px;
+}
+
+.name
+{
+    display: inline;
+    width: 250px;
+    margin-left: 5vw;
+}
+
+#last_name
+{
+    margin-left: 15px;
+}
+
+#user p
+{
+    color:rgb(75, 75, 75);
+    font-size: 0.8em;
+    margin-left: 5vw;
+}
+
+#submit_btn:not(#user)
+{
+    display: block;
+    left:0;
+    bottom:0;
+    margin:0 auto;
+    margin-top: 50px;
+    padding: 0;
+    width: 90px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    background-color: rgb(85, 85, 85);
+    cursor: pointer;
+    border: 0px;
+    font-size: 0.8em;
+    font-family: 'Source Sans Pro';
+    border-radius: 4px 4px 4px 4px;
+}
+
+hr
+{
+    background-color:rgb(236, 236, 236);
+    border: 0;
+    height: 1px;
+}
+
+#submit_btn:hover
+{
+    color:rgb(177, 172, 255);
+}

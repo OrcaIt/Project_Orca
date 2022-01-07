@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    font-family: 'Source Sans Pro';
+}
+
+body {
+    background: url('/assets/img/header-bg.jpg')no-repeat right bottom fixed;
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+}
+
+.logo
+{
+    font-size: 7em;
+    margin-left: 20px;
+}
+
+button
+{
+    opacity: 90%;
+    width: 20vw;
+    height: 50vh;
+    min-width: 300px;
+    min-height: 400px;
+    margin: 10px;
+    border: 0;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+    background-color: white;
+    margin-top: 20vh;
+    white-space: nowrap;
+}
+
+i
+{
+    font-size: 6em;
+    color:rgb(70, 70, 70)
+}
+
+span
+{
+    font-size: 2em;
+    color: rgb(70, 70, 70);
+}
+
+button:hover
+{
+    background-color: rgb(204, 200, 255);
+}
+
+input:focus
+{
+    outline: none;
+}
