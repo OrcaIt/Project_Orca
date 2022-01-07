@@ -22,13 +22,14 @@ main
     position: relative;
     display: block;
     font-size: 2.5em;
-    top: 13vh;
+    top: 22vh;
     left: 0;
     right: 0;
     width: 50%;
     padding-top: 10px;
     padding-bottom: 10px;
     min-width: 800px;
+    max-width: 900px;
     margin: auto;
     background-color: rgb(37, 37, 37);
     border-radius: 12px 12px 0px 0px;
@@ -53,13 +54,14 @@ main
     padding-top: 30px;
     padding-bottom: 30px;
     display: block;
-    top: 13vh;
+    top: 22vh;
     left:0;
     right: 0;
     margin: auto;
     width: 50%;
-    height: 600px;
+    height: 500px;
     min-width: 800px;
+    max-width: 900px;
     border-radius: 0px 0px 12px 12px;
     background-color: white;
     text-align: left;
@@ -126,11 +128,6 @@ input:focus
     display: inline;
     width: 250px;
     margin-left: 5vw;
-}
-
-#last_name
-{
-    margin-left: 15px;
 }
 
 #user p

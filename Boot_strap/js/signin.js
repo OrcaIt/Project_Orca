@@ -1,38 +1,14 @@
 function check_form() {
-    var userId = document.getElementById('id');
-    var Fname = document.getElementById('first_name');
-    var Lname = document.getElementById('last_name');
+    var name = document.getElementById('name');
     var passwd = document.login_form.pwd.value;
     var pwchk = document.login_form.chk_pwd.value;
     var email = document.getElementById('e-mail');
     var email_num = document.getElementById('Authen_number');
 
-    if(Fname.value == "") {
-        alert('성을 입력하시오.');
-        Fname.focus();
-        console.log("NULL F_NAME");
-        return false;
-    }
-    else if(Lname.value == "") {
+    if(name.value == "") {
         alert('이름을 입력하시오.');
         Lname.focus();
         console.log("NULL LNAME");
-        return false;
-    }
-    else if(userId.value == "") {
-        alert('아이디를 입력하시오.');
-        userId.focus();
-        console.log("NULL ID");
-        return false;
-    }
-    else if(passwd == "") {
-        alert('비밀번호를 입력하세요');
-        console.log("NULL PASSWORD");
-        return false;
-    }
-    else if(passwd != pwchk) {
-        alert('암호가 다릅니다. 다시 입력하세요.');
-        console.log("CHECK FAIL");
         return false;
     }
     else if(email.value == "") {
@@ -47,6 +23,22 @@ function check_form() {
         console.log("NULL E-MAIL_NUM");
         return false;
     }
+    else if(passwd == "") {
+        alert('비밀번호를 입력하세요');
+        console.log("NULL PASSWORD");
+        return false;
+    }
+    else if(passwd.length<8)
+    {
+        alert('8자 이상의 비밀번호로 설정해주세요.');
+        console.log("SHORT PASSWORD");
+        return false;
+    }
+    else if(passwd != pwchk) {
+        alert('암호가 다릅니다. 다시 입력하세요.');
+        console.log("CHECK FAIL");
+        return false;
+    }  
     else
     {
         alert("회원가입 성공");
