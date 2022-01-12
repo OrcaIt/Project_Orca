@@ -8,6 +8,7 @@ body {
     background: url('/assets/img/header-bg.jpg')no-repeat right bottom fixed;
     background-size: cover;
     text-align: center;
+    overflow: hidden;
 }
 
 main
@@ -22,11 +23,7 @@ main
     position: relative;
     display: block;
     font-size: 2.5em;
-<<<<<<< Updated upstream
     top: 18vh;
-=======
-    top: 22vh;
->>>>>>> Stashed changes
     left: 0;
     right: 0;
     width: 50%;
@@ -58,11 +55,7 @@ main
     padding-top: 30px;
     padding-bottom: 30px;
     display: block;
-<<<<<<< Updated upstream
     top: 18vh;
-=======
-    top: 22vh;
->>>>>>> Stashed changes
     left:0;
     right: 0;
     margin: auto;
