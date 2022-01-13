@@ -57,30 +57,31 @@ body {
 }
 
 .Nickname {
-    float: left;
+    display: inline-block;
     box-sizing: border-box;
     align-items: center;
     white-space: nowrap;
     margin-top: 1vh;
     border: 1px solid;
-    border-color: black;
+    border-color: rgb(187, 187, 187);
     width: 14vw;
     height: 55vh;
     margin-left: 2vw;
     padding-top: 1vh;
     padding-bottom: 1vh;
     border-radius: 8px 8px 8px 8px;
-    font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
 }
 
 .E-Mail {
-    float: left;
+    display: inline-block;
     box-sizing: border-box;
     align-items: center;
     white-space: nowrap;
     margin-top: 1vh;
     border: 1px solid;
-    border-color: black;
+    border-color: rgb(187, 187, 187);
     width: 14vw;
     height: 45vh;
     margin-left: 2vw;
@@ -88,29 +89,38 @@ body {
     padding-top: 1vh;
     padding-bottom: 1vh;
     border-radius: 8px 8px 8px 8px;
-    font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
 }
 
 .Password {
-    float: right;
+    display: inline-block;
     box-sizing: border-box;
     align-items: center;
     white-space: nowrap;
     margin-top: 1vh;
     border: 1px solid;
-    border-color: black;
+    border-color: rgb(187, 187, 187);
     width: 14vw;
     height: 55vh;
+    margin-left: 2vw;
     margin-right: 2vw;
     padding-top: 1vh;
     padding-bottom: 1vh;
     border-radius: 8px 8px 8px 8px;
-    font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
 }
 
 i {
     font-size: 4em;
-    color: rgb(70, 70, 70)
+    color: rgb(70, 70, 70);
+    margin-bottom: 3vh;
+}
+
+hr{
+    width: 11vw;
+    margin-left: 1.3vw;
 }
 
 button {
