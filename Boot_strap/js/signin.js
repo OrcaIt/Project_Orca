@@ -1,4 +1,5 @@
-function check_form() {
+function check_form() 
+{
     var name = document.getElementById('name');
     var passwd = document.login_form.pwd.value;
     var pwchk = document.login_form.chk_pwd.value;
