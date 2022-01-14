@@ -5,7 +5,7 @@
 }
 
 body {
-    background: url('../../Boot_strap/assets/img/header-bg.jpg');
+    background: url('../assets/img/header-bg.jpg')no-repeat right bottom fixed;
     background-size: cover;
     overflow: hidden;
     text-align: center;

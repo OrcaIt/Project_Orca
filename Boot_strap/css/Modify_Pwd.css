@@ -82,15 +82,14 @@ input {
     width: 300px;
     height: 35px;
     padding-left: 15px;
-    border-radius: 4px 4px 4px 4px;
+    border-radius: 2px 2px 2px 2px;
     border: 1px solid;
     text-align: left;
     border-color: rgb(196, 196, 196);
     margin: 20px;
     font-size: 0.8em;
-    margin-left: 150px;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
+    margin-left: 8vw;
+    margin-top: 5vh;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(80, 80, 80);
     box-shadow: none;
@@ -100,6 +99,11 @@ i {
     font-size: 4em;
     color: rgb(70, 70, 70);
     margin-bottom: 3vh;
+}
+
+hr {
+    width: 11vw;
+    margin-left: 1.3vw;
 }
 
 p {
