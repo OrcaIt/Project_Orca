@@ -23,7 +23,7 @@ main
     position: relative;
     display: block;
     font-size: 2.5em;
-    top: 18vh;
+    top: 19vh;
     left: 0;
     right: 0;
     width: 50%;
@@ -35,7 +35,6 @@ main
     background-color: rgb(37, 37, 37);
     border-radius: 12px 12px 0px 0px;
 }
-
 
 #title i
 {
@@ -55,12 +54,12 @@ main
     padding-top: 30px;
     padding-bottom: 30px;
     display: block;
-    top: 18vh;
+    top: 19vh;
     left:0;
     right: 0;
     margin: auto;
     width: 50%;
-    height: 500px;
+    height: 250px;
     min-width: 800px;
     max-width: 900px;
     border-radius: 0px 0px 12px 12px;
@@ -89,7 +88,35 @@ main
     border-radius: 4px 4px 4px 4px;
 }
 
+input
+{
+    margin-top: 60px;
+    width: 320px;
+    height: 35px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
+#submit_btn:not(#user)
+{
+    display: block;
+    left:0;
+    bottom:0;
+    margin:0 auto;
+    margin-top: 50px;
+    padding: 0;
+    width: 90px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    background-color: rgb(85, 85, 85);
+    cursor: pointer;
+    border: 0px;
+    font-size: 0.8em;
+    font-family: 'Source Sans Pro';
+    border-radius: 4px 4px 4px 4px;
+}
 
 #submit_btn:hover
 {

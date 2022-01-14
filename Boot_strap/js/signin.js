@@ -7,8 +7,8 @@ function check_form()
     var email_num = document.getElementById('Authen_number');
 
     if(name.value == "") {
-        alert('이름을 입력하시오.');
-        Lname.focus();
+        alert('닉네임을 입력하시오.');
+        name.focus();
         console.log("NULL LNAME");
         return false;
     }
