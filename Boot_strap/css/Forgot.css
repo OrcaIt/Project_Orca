@@ -98,6 +98,11 @@ input
     padding-right: 15px;
 }
 
+input:focus
+{
+    outline: none;
+}
+
 #submit_btn:not(#user)
 {
     display: block;
