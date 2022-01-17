@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orca Cloud</title>
-    <link rel="stylesheet" href="CSS/Modify_Name.css">
+    <link rel="stylesheet" href="CSS/Md_name.css">
     <script src="JS/Modify_RE.js" defer></script>
     <script src="https://kit.fontawesome.com/384a503f7d.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
 </head>
 
@@ -21,12 +22,14 @@
     <div class="main">
         <div class="border">
             <br>
-            <p>Now Nickname : Orca</p>
-            <p>Change Nickname : </p>
+            <div class="name">Now Nickname : Orca Cloud</div>
+            <div class="name">Change Nickname : </div>
             <input type="text" placeholder="Change Nickname">
             <br>
             <br>
-            <button onclick="location.href='test3.html'">modify</button>
+            <button onclick="location.href='MyDrive.html'">modify</button>
+            <!--만약 변경할 Nickname이 DataBase에 존재하는 값과 동일하다면 알림창(or 경고창) 생성 후 화면 초기화.
+            중복되는 값이 없다면 변경.(jsp or php)-->
         </div>
     </div>
 </body>
