@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Page</title>
+<script>
+    function gosignin(){
+        location.href="register.jsp";
+    }
+</script>
+</head>
+
+<body>
+<br>
+<h2>Log IN</h2><br>
+<hr align='left' width='1000'><br>
+<form name='frm1' method="post" action='logon.jsp'>
+<b>User ID : </b> 
+<input type = "text" name='uid' size='10'><br>
+<b>User PW : </b>
+<input type="password" name="upwd"><br>
+<input type="submit" value="Log IN">
+<input type='button' value="Sign IN" onclick='gosignin();'>
+
+</body>
+</html>

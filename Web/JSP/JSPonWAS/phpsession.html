@@ -1,0 +1,31 @@
+<?php
+        session_start();
+        $seid = $_POST['userid'];
+        $_SESSION['ses'] = $seid;
+        $key = $_SESSION['ses'];
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tesint SessioN</title>
+</head>
+<body>
+<?php
+        if($_SESSION['ses'] === null)
+        {
+?>
+<script>
+alert("wrong access");
+location.href="login.html";
+</script>
+<?php
+        }
+        else{
+?>
+Welcome <?=$_SESSION['ses']?>
+<?php
+}
+?>
+</body>
+</html>
+<!-- 이 문서는 PHP WEB서버의 문서, 해당 디렉터리에서 main.html/ WEB/login.html 이 시작, logon.jsp 결과가 여기-->
