@@ -16,22 +16,13 @@
 </head>
 
 <body>
-    <div class="title">
+    <div id=title>
         <a href="/index.html">Orca Cloud</a>
     </div>
-    <div class="main">
-        <div class="border">
-            <br>
-            <div class="name">Now Nickname : Orca Cloud</div>
-            <div class="name">Change Nickname : </div>
-            <input type="text" placeholder="Change Nickname">
-            <br>
-            <br>
-            <button onclick="location.href='MyDrive.html'">modify</button>
-            <!--만약 변경할 Nickname이 DataBase에 존재하는 값과 동일하다면 알림창(or 경고창) 생성 후 화면 초기화.
-            중복되는 값이 없다면 변경.(jsp or php)-->
-        </div>
-    </div>
+    <form id="md_name" method="post" action=#>
+        <input type="text" placeholder="Nickname" id="Nickname">
+        <input type="submit" value="Send" id="submit_btn">
+    </form>
 </body>
 
 </html>
