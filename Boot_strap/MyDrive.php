@@ -1,3 +1,24 @@
+<?php
+session_start();
+$getid;
+$skey;
+        if($_SESSION['ssid'] == null)
+        {
+                $getid = $_POST['userid'];
+                $_SESSION['ssid'] = $getid;
+                $skey = $_SESSION['ssid'];
+        }
+        if($skey == null)
+        {
+?>
+                <script>
+                alert("Wrong Access");
+                location.href="index.html";
+                </script>
+<?php
+                }
+        else{
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,5 +76,7 @@
         </article>
     </main>
 </body>
-
 </html>
+<?php
+        }
+?>
