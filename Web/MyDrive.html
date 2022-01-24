@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel ="stylesheet" href="CSS/MyDrive.css">
     <script src ="JS/Upload.js"></script>
+    <script src ="JS/app.js"></script>
     <script src="https://kit.fontawesome.com/384a503f7d.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.283.1.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
     <title>Orca Cloud Drive</title>
@@ -25,7 +27,7 @@
           <aside>
             <form class="filebox" name="upload" > 
                 <label for="ex_file"><i class="fas fa-file-upload"></i>File Upload</label> 
-                <input type="file" id="ex_file" onchange="File_Upload(this);"> 
+                <input type="file" id="ex_file" onchange="addPhoto(this);"> 
             </form>
             <div id = "btn">
                 <button><i class="fab fa-google-drive"></i>My Drive</button>
