@@ -9,7 +9,7 @@ input:focus
 }
 
 body {
-    background: url('/assets/img/header-bg.jpg')no-repeat right bottom fixed;
+    background: url('/assets/img/header-bg.jpg');
     background-size: cover;
     overflow: hidden;
 }
