@@ -9,8 +9,7 @@
 **/*.back.*
 
 project/node_modules
-project/bower_components
-project/amplify
+bower_components
 
 *.sublime*
 
