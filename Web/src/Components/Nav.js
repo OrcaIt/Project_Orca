@@ -15,7 +15,7 @@ class Nav extends React.Component
                     <div id ="Link Box">
                         <Link to="Services" spy={true} smooth={true} className={`${style.Link}`}>Serivces</Link>
                         <Link className={`${style.Link}`} to="About" spy={true} smooth={true}>About</Link>                 
-                        <NavLink to="/Drive"><button className={`${style.Login}`}>Sign In</button></NavLink>
+                        <NavLink to="/Login"><button className={`${style.Login}`}>Sign In</button></NavLink>
                     </div>
                 </nav>
                 <div className={`${style.MainHeader}`}>
