@@ -3,7 +3,8 @@ import Amplify, { Storage } from "aws-amplify";
 import awsconfig from "../aws-exports";
 import { withAuthenticator } from "@aws-amplify/ui-react";
 import style from "../Css/Login.module.css";
-import { Link } from "react-router-dom";
+import { Link, history } from "react-router-dom";
+import { Auth } from 'aws-amplify';
 
 Amplify.configure(awsconfig);
 
@@ -24,6 +25,15 @@ function App() {
   useEffect(() => {
     loadImages();
   }, []);
+  
+  async function SignOut(props) {
+    try {
+        await Auth.signOut();
+        window.location.href="/"
+    } catch (error) {
+        console.log('error signing out: ', error);
+    }
+  }
 
   const handleFileLoad = () => {
     const filename = ref.current.files[0].name;
@@ -51,12 +61,16 @@ function App() {
     <div className={`${style.Drive}`}>
       <div className={`${style.Header}`}>
         <div><Link to="/" className={`${style.HeaderBrand}`}>Orca Cloud</Link></div>
+        <div><button className={`${style.SignOut}`} onClick={() => SignOut()}><i class="fas fa-sign-out-alt"></i></button></div>
       </div>
       <div className={`${style.Drive_File}`}>
         {files.map((file) => (
           <tr className={`${style.FileBox}`}>
             <td className={`${style.File}`}>File : {file.key}</td>
-            <td><button className={`${style.Delete}`} onClick={() => handleDelete(file.key)}>Delete</button></td>
+            <td>
+              <button className={`${style.Btn}`}>Download</button>
+              <button className={`${style.Btn}`} onClick={() => handleDelete(file.key)}>Delete</button>
+            </td>
           </tr>
         ))}
       </div>

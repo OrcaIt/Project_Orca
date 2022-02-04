@@ -11,12 +11,28 @@
 
 .Header
 {
-    display: block;
+    display: flex;
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: var(--black-color);
-    justify-content: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.SignOut
+{
+    background: none;
+    border: 0;
+    margin-right: 30px;
+    font-size: 0.9em;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.SignOut:hover
+{
+    color: var(--sub-color);
 }
 
 .HeaderBrand
@@ -58,8 +74,9 @@
     background-color: rgb(172, 166, 224);
 }
 
-.Delete
+.Btn
 {
+    margin-left: 15px;
     padding: 0.6em;
     font-size: 0.5em;
     border-radius: 0.25em 0.25em 0.25em 0.25em;
@@ -68,6 +85,11 @@
     color: white;
     border: 0;
     cursor: pointer;
+}
+
+.Btn:hover
+{
+    background-color: rgb(172, 166, 224);
 }
 
 .Drive_File
