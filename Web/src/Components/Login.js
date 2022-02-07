@@ -3,8 +3,9 @@ import Amplify, { Storage } from "aws-amplify";
 import awsconfig from "../aws-exports";
 import { withAuthenticator } from "@aws-amplify/ui-react";
 import style from "../Css/Login.module.css";
-import { Link, history } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Auth } from 'aws-amplify';
+import $ from "jquery";
 
 Amplify.configure(awsconfig);
 
@@ -50,10 +51,17 @@ function App() {
       });
   };
 
-  const handleDelete = (file) => {
+  const Delete = (file) => {
     Storage.remove(file, {level: 'private'}).then(resp => {
       console.log(resp);
       loadImages();
+    }).catch(err => { console.log(err); });
+  }
+
+  const Down = (file) => {
+    Storage.get(file, {level: 'private', download:Boolean}).then(resp => {
+      console.log(resp);
+      window.location.href=resp;
     }).catch(err => { console.log(err); });
   }
 
@@ -68,8 +76,8 @@ function App() {
           <tr className={`${style.FileBox}`}>
             <td className={`${style.File}`}>File : {file.key}</td>
             <td>
-              <button className={`${style.Btn}`}>Download</button>
-              <button className={`${style.Btn}`} onClick={() => handleDelete(file.key)}>Delete</button>
+              <button className={`${style.Btn}`} onClick={() => Down(file.key)}>Download</button>
+              <button className={`${style.Btn}`} onClick={() => Delete(file.key)}>Delete</button>
             </td>
           </tr>
         ))}
@@ -82,4 +90,9 @@ function App() {
   );
 }
 
-export default withAuthenticator(App);
+function ReturnHandler()
+{
+  $("html").removeAttr("font-size");
+}
+
+export default withAuthenticator(App, ReturnHandler());

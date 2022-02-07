@@ -8,14 +8,19 @@ class Nav extends React.Component
 {
     render()
     {
+        function ClickHandler()
+        {
+            document.querySelector("html").style.fontSize = "16px";
+        }
+
         return(
             <header>
                 <nav>
-                    <div><a className={`${style.NavbarBrand}`} href="#">Orca Cloud</a></div>
+                    <div><NavLink to="/" className={`${style.NavbarBrand}`}>Orca Cloud</NavLink></div>
                     <div id ="Link Box">
                         <Link to="Services" spy={true} smooth={true} className={`${style.Link}`}>Serivces</Link>
                         <Link className={`${style.Link}`} to="About" spy={true} smooth={true}>About</Link>                 
-                        <NavLink to="/Login"><button className={`${style.Login}`}>Sign In</button></NavLink>
+                        <NavLink to="/Login" onClick={() => ClickHandler()}><button className={`${style.Login}`}>Sign In</button></NavLink>
                     </div>
                 </nav>
                 <div className={`${style.MainHeader}`}>
