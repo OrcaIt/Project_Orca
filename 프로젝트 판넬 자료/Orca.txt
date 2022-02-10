@@ -1,0 +1,19 @@
+:: 팀명  : Orca
+
+:: 프로젝트 개요 
+
+	AWS의 S3를 기반으로 한 Cloud Storage 서비스로 회원 가입한 사용자마다 S3에 개인의
+	Private한 저장 공간을 생성, 파일 업로드/다운로드를 웹에서 가능하게 제공하는 서비스
+	
+	Ex ) Google Drive, Naver MyBox, iCloud 
+
+:: 주요 기능
+
+	사용자 별 개인 저장 공간 제공, 자유로운 파일의 업로드와 다운로드, 휴대폰이나 컴퓨터 어느 화면에서도 접근 가능한 웹 UI 제공
+
+:: 개발 환경 
+
+	Client : Windows
+	Server : AWS EC2 Amazon Linux 2
+	Tool : Aws S3, AWS EC2, AWS Amplify, AWS Cognito, Git
+	Language : HTML, CSS, JavaScript, AWS CLI, React
