@@ -13,7 +13,7 @@ function App() {
   const [files, setFiles] = useState([]);
   const [progress, setProgress] = useState();
   document.querySelector("html").style.fontSize = "16px";
-
+  document.querySelector("html").style.overflow = "";
   const loadImages = () => {
     Storage.list('', {level: 'private'})
     .then(files => {
