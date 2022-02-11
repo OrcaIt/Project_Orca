@@ -1,0 +1,297 @@
+@import "./All.module.css";
+
+.Header
+{
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--black-color);
+    align-content: center;
+    justify-content: space-between;
+}
+
+.SignOut
+{
+    background: none;
+    border: 0;
+    margin-right: 30px;
+    font-size: 1.5em;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.SignOut:hover
+{
+    color: var(--sub-color);
+}
+
+.HeaderBrand
+{
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-left: 30px;
+    color: var(--sub-color);
+}
+
+
+.Input
+{
+    width: 25vw;
+    min-width: 100px;
+    max-width: 140px;
+    height: 15px;
+    padding: 10px;
+    font-size: 0.8em;
+    border-radius: 0.25em 0.25em 0.25em 0.25em;
+    background-color: var(--sub-color);
+    font-family: var(--menu-font);
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 15px;
+    white-space: nowrap;
+}
+
+.UploadBox
+{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.Upload
+{
+    position: absolute;
+    bottom:0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    bottom:0;
+    width: 100%;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    border: 1px solid;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    background-color: rgb(252, 252, 252);
+    border-color: var(--white-color);
+    clear: both;
+}
+
+.Input:hover
+{
+    background-color: rgb(172, 166, 224);
+}
+
+.Btn
+{
+    margin-right: 15px;
+    padding: 0.6em;
+    font-size: 0.7em;
+    border-radius: 0.25em 0.25em 0.25em 0.25em;
+    background-color: var(--sub-color);
+    font-family: var(--menu-font);
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+.Btn:hover
+{
+    background-color: rgb(172, 166, 224);
+}
+
+.Drive_File
+{
+    display: block;
+    overflow: auto;
+    width: 100%;
+    height: 600px;
+    text-align: left;
+    clear: both
+}
+
+.FileBox
+{
+    display: block;
+    align-items: center;
+    border: 1px solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: var(--sub-color);
+}
+
+.FileBtn
+{
+    padding-left: 30px;
+    width: 100vw;
+    height: 50px;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 0.8em;
+    font-family: var(--td-font);
+    color: rgb(99, 99, 99);
+}
+
+.FileBtn:hover
+{
+    background-color: var(--sub-color);
+}
+
+.ProgressBox
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.Modal
+{
+    display: none;
+    background-color: rgb(243, 243, 243);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: right;
+}
+
+progress 
+{
+    display: none;
+    -webkit-appearance: none
+}
+  
+::-webkit-progress-bar 
+{
+    background-color: rgb(219, 219, 219);
+    border-radius: 4px 4px 4px 4px;
+}
+  
+::-webkit-progress-value 
+{
+    background-color: var(--sub-color);
+    border-radius: 4px 4px 4px 4px;
+}
+
+@media screen and (min-width: 770px)
+{
+
+    html
+    {
+        overflow: hidden;
+    }
+
+    .UploadBox
+    {
+        flex-direction: row;
+    }
+
+    .Main
+    {
+        height: 5000px;
+        overflow: scroll;
+    }
+
+    .Upload
+    {
+        position: static;
+        overflow: hidden;
+        height: 100vh;
+        width: 300px;
+        flex-direction: column;
+        justify-content: start;
+        align-content: center;
+        border: 1px solid;
+        border-top: 0;
+        border-bottom: 0;
+        border-right: 1;
+        border-color: var(--white-color);
+    }
+
+    .Input
+    {
+        margin: 0;
+        margin-top: 20px;
+        padding: 0.9em;
+        font-size: 0.8em;
+        align-self: center;
+    }
+
+    .ProgressBox
+    {
+        margin-top: 50px;
+    }
+}
+
+
+@media screen and (min-height: 200px)
+{
+    .Drive_File
+    {
+        height: 150px;
+    }
+}
+
+
+@media screen and (min-height: 300px)
+{
+    .Drive_File
+    {
+        height: 250px;
+    }
+}
+
+
+@media screen and (min-height: 400px)
+{
+    .Drive_File
+    {
+        height: 350px;
+    }
+}
+
+
+@media screen and (min-height: 500px)
+{
+    .Drive_File
+    {
+        height: 450px;
+    }
+}
+
+@media screen and (min-height: 600px)
+{
+    .Drive_File
+    {
+        height: 550px;
+    }
+}
+
+@media screen and (min-height: 700px)
+{
+    .Drive_File
+    {
+        height: 650px;
+    }
+}
+
+@media screen and (min-height: 800px)
+{
+    .Drive_File
+    {
+        height: 750px;
+    }
+}
+
+@media screen and (min-height: 900px)
+{
+    .Drive_File
+    {
+        height: 850px;
+    }
+}

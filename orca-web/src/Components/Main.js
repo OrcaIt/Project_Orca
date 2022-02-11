@@ -8,6 +8,8 @@ class Main extends React.Component
 {
     render()
     {
+        document.querySelector("html").style.fontSize="";
+
         return(
             <div>
                 <Nav/>

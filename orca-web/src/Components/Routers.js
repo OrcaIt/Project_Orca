@@ -1,7 +1,7 @@
 import React from 'react';
 import Main from "./Main";
 import {Route, Routes} from "react-router-dom";
-import Drive from "./Login";
+import Drive from "./Drive";
 
 class Routers extends React.Component
 {
@@ -11,7 +11,7 @@ class Routers extends React.Component
             <div>
                 <Routes>
                     <Route path="/" element={<Main/>}/>
-                    <Route onUpdate={() => window.scrollTo(0, 0)} path="/Login" element={<Drive/>}/>
+                    <Route onUpdate={() => window.scrollTo(0, 0)} path="/Drive" element={<Drive/>}/>
                 </Routes>
             </div>          
         );
