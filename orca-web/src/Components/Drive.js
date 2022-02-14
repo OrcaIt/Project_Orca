@@ -40,6 +40,7 @@ function App() {
 
   const handleFileLoad = () => {
     const filename = ref.current.files[0].name;
+
     Storage.put(filename, ref.current.files[0], {
       level: "private",
       type: "*",
@@ -51,13 +52,12 @@ function App() {
     })
       .then(resp => {
         console.log(resp);
-        document.querySelector("progress").style.display="none"
-        loadImages();
+        document.querySelector("progress").style.display="none";
+        loadImages();  
       })
       .catch(err => {
         console.log(err);
       });
-      
   };
 
   const Delete = (file) => {
@@ -90,6 +90,20 @@ function App() {
     }
   }
 
+  const FileType = (file) => 
+  {
+    let fileLength = file.length;
+    let fileDot = file.lastIndexOf(".");
+    let fileType = file.substring(fileDot+1, fileLength);
+
+    console.log(fileType);
+  }
+
+  const Load = (Name) =>
+  {
+      alert(Name);
+  }
+
 
   return (
     <div>
@@ -108,7 +122,12 @@ function App() {
           <div className={`${style.Drive_File}`}>
             {files.map((file) => (
               <tr className={`${style.FileBox}`} id = "FileBox">
-                <td className={`${style.File}`}><button className={`${style.FileBtn}`} onClick={() => Modal(file.key)}>{file.key}</button></td>
+                <td className={`${style.File}`}>
+                  <button className={`${style.FileBtn}`} onClick={() => Modal(file.key)}>
+                    <img className={`${style.IMG}`} name = {file.key} onLoad={() => Load(file.key)}/>
+                    <div className={`${style.FileValue}`}>{file.key}</div>
+                  </button>
+                </td>
                 <td className={`${style.Modal}`} id = {file.key}>
                   <button className={`${style.Btn}`} onClick={() => Down(file.key)}>Download</button>
                   <button className={`${style.Btn}`} onClick={() => Delete(file.key)}>Delete</button>
@@ -122,9 +141,4 @@ function App() {
   );
 }
 
-function ReturnHandler()
-{
-  
-}
-
-export default withAuthenticator(App, ReturnHandler());
+export default withAuthenticator(App);
