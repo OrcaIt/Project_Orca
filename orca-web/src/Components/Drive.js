@@ -12,8 +12,10 @@ function App() {
   const ref = useRef(null);
   const [files, setFiles] = useState([]);
   const [progress, setProgress] = useState();
+
   document.querySelector("html").style.fontSize = "16px";
   document.querySelector("html").style.overflow = "";
+  
   const loadImages = () => {
     Storage.list('', {level: 'private'})
     .then(files => {
@@ -48,12 +50,13 @@ function App() {
         document.querySelector("progress").style.display="block"
         setProgress(Math.round((progress.loaded / progress.total) * 100));
         setTimeout(() => {setProgress()}, 1000);
-      }
+      },
     })
       .then(resp => {
         console.log(resp);
         document.querySelector("progress").style.display="none";
-        loadImages();  
+        FileType(filename);
+        loadImages();
       })
       .catch(err => {
         console.log(err);
@@ -90,18 +93,22 @@ function App() {
     }
   }
 
-  const FileType = (file) => 
+  const FileType = (file) =>
   {
     let fileLength = file.length;
     let fileDot = file.lastIndexOf(".");
     let fileType = file.substring(fileDot+1, fileLength);
 
-    console.log(fileType);
-  }
-
-  const Load = (Name) =>
-  {
-      alert(Name);
+    let Type = String(fileType);
+    
+    if(Type == "xlsx")
+    {
+      document.getElementById(file+1).src = "Img/XLSX.png";
+    }
+    else if(Type == "jpg")
+    {
+      document.getElementById(file+1).src = "Img/JPG.png";
+    }
   }
 
 
@@ -124,7 +131,7 @@ function App() {
               <tr className={`${style.FileBox}`} id = "FileBox">
                 <td className={`${style.File}`}>
                   <button className={`${style.FileBtn}`} onClick={() => Modal(file.key)}>
-                    <img className={`${style.IMG}`} name = {file.key} onLoad={() => Load(file.key)}/>
+                    <img className={`${style.IMG}`} id = {file.key+1}/>
                     <div className={`${style.FileValue}`}>{file.key}</div>
                   </button>
                 </td>
