@@ -30,7 +30,7 @@ function App() {
   useEffect(() => {
     loadImages();
   }, []);
-  
+
   async function SignOut(props) {
     try {
         await Auth.signOut();
@@ -42,7 +42,6 @@ function App() {
 
   const handleFileLoad = () => {
     const filename = ref.current.files[0].name;
-
     Storage.put(filename, ref.current.files[0], {
       level: "private",
       type: "*",
@@ -55,7 +54,6 @@ function App() {
       .then(resp => {
         console.log(resp);
         document.querySelector("progress").style.display="none";
-        FileType(filename);
         loadImages();
       })
       .catch(err => {
@@ -100,17 +98,57 @@ function App() {
     let fileType = file.substring(fileDot+1, fileLength);
 
     let Type = String(fileType);
-    
+    var ImgURL;
+
     if(Type == "xlsx")
     {
-      document.getElementById(file+1).src = "Img/XLSX.png";
+       ImgURL = "Img/XLSX.png";
     }
     else if(Type == "jpg")
     {
-      document.getElementById(file+1).src = "Img/JPG.png";
+      ImgURL = "Img/JPG.png";
     }
+    else if(Type == "png")
+    {
+      ImgURL = "Img/PNG.png";
+    }
+    else if(Type == "svg")
+    {
+      ImgURL = "Img/SVG.png";
+    }
+    else if(Type == "html")
+    {
+      ImgURL = "Img/HTML.png";
+    }
+    else if(Type == "js")
+    {
+      ImgURL = "Img/JS.png";
+    }
+    else if(Type == "MP3")
+    {
+      ImgURL = "Img/MP3.png";
+    }
+    else if(Type == "mp4")
+    {
+      ImgURL = "Img/MP4.png";
+    }
+    else if(Type == "txt")
+    {
+      ImgURL = "Img/TXT.png";
+    }
+    
+
+
+    return ImgURL;
   }
 
+  const FileName = (file) =>
+  {
+    let fileDot = file.lastIndexOf(".");
+    let fileName = file.substring(0, fileDot);
+
+    return fileName;
+  }
 
   return (
     <div>
@@ -131,8 +169,8 @@ function App() {
               <tr className={`${style.FileBox}`} id = "FileBox">
                 <td className={`${style.File}`}>
                   <button className={`${style.FileBtn}`} onClick={() => Modal(file.key)}>
-                    <img className={`${style.IMG}`} id = {file.key+1}/>
-                    <div className={`${style.FileValue}`}>{file.key}</div>
+                    <img className={`${style.IMG}`} src={FileType(file.key)}/>
+                    <div className={`${style.FileValue}`}>{FileName(file.key)}</div>
                   </button>
                 </td>
                 <td className={`${style.Modal}`} id = {file.key}>
