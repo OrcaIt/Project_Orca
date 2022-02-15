@@ -124,7 +124,7 @@ function App() {
     {
       ImgURL = "Img/JS.png";
     }
-    else if(Type == "MP3")
+    else if(Type == "mp3")
     {
       ImgURL = "Img/MP3.png";
     }
@@ -135,6 +135,22 @@ function App() {
     else if(Type == "txt")
     {
       ImgURL = "Img/TXT.png";
+    }
+    else if(Type == "docx")
+    {
+      ImgURL = "Img/DOCX.png";
+    }
+    else if(Type == "ppt")
+    {
+      ImgURL = "Img/PPT.png";
+    }
+    else if(Type == "pdf")
+    {
+      ImgURL = "Img/PDF.png";
+    }
+    else if(Type == "zip")
+    {
+      ImgURL = "Img/ZIP.png";
     }
     
 
