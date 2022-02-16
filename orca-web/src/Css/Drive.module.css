@@ -214,8 +214,7 @@ progress
 
     .Upload
     {
-        position: absolute;
-        bottom: 0;
+        position: static;
         overflow: hidden;
         height: 100vh;
         width: 300px;
@@ -257,7 +256,6 @@ progress
     height: 600px;
     text-align: left;
     }
-    
 }
 
 @media screen and (min-width: 900px)
@@ -273,25 +271,33 @@ progress
     }
 }
 
+
+
 @media screen and (min-height: 200px)
+{
+    .Drive_File
+    {
+        height: 100px;
+    }
+}
+
+@media screen and (min-height: 250px)
 {
     .Drive_File
     {
         height: 150px;
     }
 }
-
-@media screen and (min-height: 200px)
-{
-    .Drive_File
-    {
-        height: 150px;
-    }
-}
-
-
 
 @media screen and (min-height: 300px)
+{
+    .Drive_File
+    {
+        height: 200px;
+    }
+}
+
+@media screen and (min-height: 350px)
 {
     .Drive_File
     {
@@ -299,8 +305,15 @@ progress
     }
 }
 
-
 @media screen and (min-height: 400px)
+{
+    .Drive_File
+    {
+        height: 300px;
+    }
+}
+
+@media screen and (min-height: 450px)
 {
     .Drive_File
     {
@@ -308,8 +321,15 @@ progress
     }
 }
 
-
 @media screen and (min-height: 500px)
+{
+    .Drive_File
+    {
+        height: 400px;
+    }
+}
+
+@media screen and (min-height: 550px)
 {
     .Drive_File
     {
@@ -321,11 +341,27 @@ progress
 {
     .Drive_File
     {
+        height: 500px;
+    }
+}
+
+@media screen and (min-height: 650px)
+{
+    .Drive_File
+    {
         height: 550px;
     }
 }
 
 @media screen and (min-height: 700px)
+{
+    .Drive_File
+    {
+        height: 600px;
+    }
+}
+
+@media screen and (min-height: 750px)
 {
     .Drive_File
     {
@@ -337,11 +373,131 @@ progress
 {
     .Drive_File
     {
+        height: 700px;
+    }
+}
+
+@media screen and (min-height: 850px)
+{
+    .Drive_File
+    {
         height: 750px;
     }
 }
 
-@media screen and (min-height: 900px)
+@media screen and (min-height: 200px) and (min-width: 770px)
+{
+    .Drive_File
+    {
+        height: 150px;
+    }
+}
+
+@media screen and (min-height: 250px) and (min-width: 770px)
+{
+    .Drive_File
+    {
+        height: 200px;
+    }
+}
+
+@media screen and (min-height: 300px) and (min-width: 770px)
+{
+    .Drive_File
+    {
+        height: 250px;
+    }
+}
+
+@media screen and (min-height: 350px) and (min-width: 770px)
+{
+    .Drive_File
+    {
+        height: 300px;
+    }
+}
+
+@media screen and (min-height: 400px) and (min-width: 770px)
+{
+    .Drive_File
+    {
+        height: 350px;
+    }
+}
+
+@media screen and (min-height: 450px) and (min-width: 770px)
+{
+    .Drive_File
+    {
+        height: 400px;
+    }
+}
+
+@media screen and (min-height: 500px) and (min-width: 770px)
+{
+    .Drive_File
+    {
+        height: 450px;
+    }
+}
+
+@media screen and (min-height: 550px) and (min-width: 770px)
+{
+    .Drive_File
+    {
+        height: 500px;
+    }
+}
+
+@media screen and (min-height: 600px) and (min-width: 770px)
+{
+    .Drive_File
+    {
+        height: 550px;
+    }
+}
+
+@media screen and (min-height: 650px) and (min-width: 770px)
+{
+    .Drive_File
+    {
+        height: 600px;
+    }
+}
+
+@media screen and (min-height: 700px) and (min-width: 770px)
+{
+    .Drive_File
+    {
+        height: 650px;
+    }
+}
+
+@media screen and (min-height: 750px) and (min-width: 770px)
+{
+    .Drive_File
+    {
+        height: 700px;
+    }
+}
+
+@media screen and (min-height: 800px) and (min-width: 770px)
+{
+    .Drive_File
+    {
+        height: 750px;
+    }
+}
+
+@media screen and (min-height: 850px) and (min-width: 770px)
+{
+    .Drive_File
+    {
+        height: 800px;
+    }
+}
+
+@media screen and (min-height: 900px) and (min-width: 770px)
 {
     .Drive_File
     {
@@ -349,3 +505,10 @@ progress
     }
 }
 
+@media screen and (min-height: 950px) and (min-width: 770px)
+{
+    .Drive_File
+    {
+        height: 900px;
+    }
+}
