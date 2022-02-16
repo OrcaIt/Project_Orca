@@ -10,6 +10,7 @@ class Main extends React.Component
     {
         document.querySelector("html").style.fontSize="";
         document.querySelector("html").style.overflow="auto";
+        document.querySelector("body").style.overflow = "auto";
 
         return(
             <div>

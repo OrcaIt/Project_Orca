@@ -15,7 +15,9 @@ function App() {
 
   document.querySelector("html").style.fontSize = "16px";
   document.querySelector("html").style.overflow = "";
-  
+  document.querySelector("body").style.overflow = "hidden";
+
+
   const loadImages = () => {
     Storage.list('', {level: 'private'})
     .then(files => {
@@ -122,7 +124,7 @@ function App() {
     }
     else if(Type == "dbf")
     {
-      ImgURL = "Img/DBF.png";
+      ImgURL = "Img/DBF.png"; 
     }
     else if(Type == "doc" || Type == "docx")
     {
@@ -255,7 +257,6 @@ function App() {
                   <button className={`${style.FileBtn}`} onClick={() => Modal(file.key)}>
                     <img className={`${style.IMG}`} src={FileType(file.key)}/>
                     <div className={`${style.FileValue}`}>{FileName(file.key)}</div>
-                    <div className={`${style.Capacity}`}></div>
                   </button>
                 </td>
                 <td className={`${style.Modal}`} id = {file.key}>
