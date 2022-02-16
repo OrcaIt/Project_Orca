@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f4814a74.css",
-    "main.js": "/static/js/main.adc2b12f.js",
+    "main.css": "/static/css/main.d831b0ec.css",
+    "main.js": "/static/js/main.f0a1f91f.js",
     "polyfills-dom.js": "/static/js/polyfills-dom.0aff9d5c.chunk.js",
     "polyfills-core-js.js": "/static/js/polyfills-core-js.ed2a7a22.chunk.js",
     "static/js/240.60402e91.chunk.js": "/static/js/240.60402e91.chunk.js",
@@ -43,8 +43,8 @@
     "static/media/About-Image-2.jpg": "/static/media/About-Image-2.5ee456dbca8df97b3eee.jpg",
     "static/media/Services-Image-1.jpg": "/static/media/Services-Image-1.bec36f847ed8aea00dc6.jpg",
     "index.html": "/index.html",
-    "main.f4814a74.css.map": "/static/css/main.f4814a74.css.map",
-    "main.adc2b12f.js.map": "/static/js/main.adc2b12f.js.map",
+    "main.d831b0ec.css.map": "/static/css/main.d831b0ec.css.map",
+    "main.f0a1f91f.js.map": "/static/js/main.f0a1f91f.js.map",
     "polyfills-dom.0aff9d5c.chunk.js.map": "/static/js/polyfills-dom.0aff9d5c.chunk.js.map",
     "polyfills-core-js.ed2a7a22.chunk.js.map": "/static/js/polyfills-core-js.ed2a7a22.chunk.js.map",
     "240.60402e91.chunk.js.map": "/static/js/240.60402e91.chunk.js.map",
@@ -79,7 +79,7 @@
     "polyfills-css-shim.330ed4b5.chunk.js.map": "/static/js/polyfills-css-shim.330ed4b5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4814a74.css",
-    "static/js/main.adc2b12f.js"
+    "static/css/main.d831b0ec.css",
+    "static/js/main.f0a1f91f.js"
   ]
 }

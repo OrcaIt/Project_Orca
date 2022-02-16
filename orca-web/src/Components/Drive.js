@@ -15,7 +15,6 @@ function App() {
 
   document.querySelector("html").style.fontSize = "16px";
   document.querySelector("html").style.overflow = "";
-  document.querySelector("body").style.overflow = "hidden";
 
 
   const loadImages = () => {

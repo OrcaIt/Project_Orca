@@ -203,6 +203,7 @@ progress
     .UploadBox
     {
         flex-direction: row;
+        overflow: hidden;
     }
 
     .Main
@@ -213,7 +214,8 @@ progress
 
     .Upload
     {
-        position: static;
+        position: absolute;
+        bottom: 0;
         overflow: hidden;
         height: 100vh;
         width: 300px;
@@ -279,6 +281,15 @@ progress
     }
 }
 
+@media screen and (min-height: 200px)
+{
+    .Drive_File
+    {
+        height: 150px;
+    }
+}
+
+
 
 @media screen and (min-height: 300px)
 {
@@ -337,3 +348,4 @@ progress
         height: 850px;
     }
 }
+
