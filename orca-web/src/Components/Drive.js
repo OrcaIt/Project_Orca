@@ -100,29 +100,65 @@ function App() {
     let Type = String(fileType);
     var ImgURL;
 
-    if(Type == "xlsx")
+    if(Type == "7z")
     {
-       ImgURL = "Img/XLSX.png";
+       ImgURL = "Img/7Z.png";
     }
-    else if(Type == "jpg")
+    else if(Type == "ai")
     {
-      ImgURL = "Img/JPG.png";
+      ImgURL = "Img/AI.png";
     }
-    else if(Type == "png")
+    else if(Type == "avi")
     {
-      ImgURL = "Img/PNG.png";
+      ImgURL = "Img/AVI.png";
     }
-    else if(Type == "svg")
+    else if(Type == "css")
     {
-      ImgURL = "Img/SVG.png";
+      ImgURL = "Img/CSS.png";
+    }
+    else if(Type == "csv")
+    {
+      ImgURL = "Img/CSV.png";
+    }
+    else if(Type == "dbf")
+    {
+      ImgURL = "Img/DBF.png";
+    }
+    else if(Type == "doc" || Type == "docx")
+    {
+      ImgURL = "Img/DOC.png";
+    }
+    else if(Type == "dwg")
+    {
+      ImgURL = "Img/DWG.png";
+    }
+    else if(Type == "exe")
+    {
+      ImgURL = "Img/EXE.png";
+    }
+    else if(Type == "gif")
+    {
+      ImgURL = "Img/GIF.png";
     }
     else if(Type == "html")
     {
       ImgURL = "Img/HTML.png";
     }
+    else if(Type == "iso")
+    {
+      ImgURL = "Img/ISO.png";
+    }
+    else if(Type == "jpg")
+    {
+      ImgURL = "Img/JPG.png";
+    }
     else if(Type == "js")
     {
       ImgURL = "Img/JS.png";
+    }
+    else if(Type == "json")
+    {
+      ImgURL = "Img/JSON.png";
     }
     else if(Type == "mp3")
     {
@@ -132,25 +168,57 @@ function App() {
     {
       ImgURL = "Img/MP4.png";
     }
-    else if(Type == "txt")
-    {
-      ImgURL = "Img/TXT.png";
-    }
-    else if(Type == "docx")
-    {
-      ImgURL = "Img/DOCX.png";
-    }
-    else if(Type == "ppt")
-    {
-      ImgURL = "Img/PPT.png";
-    }
     else if(Type == "pdf")
     {
       ImgURL = "Img/PDF.png";
     }
+    else if(Type == "png")
+    {
+      ImgURL = "Img/PNG.png";
+    }
+    else if(Type == "ppt" || Type == "pptx")
+    {
+      ImgURL = "Img/PPT.png";
+    }
+    else if(Type == "psd")
+    {
+      ImgURL = "Img/PSD.png";
+    }
+    else if(Type == "rar")
+    {
+      ImgURL = "Img/RAR.png";
+    }
+    else if(Type == "svg")
+    {
+      ImgURL = "Img/SVG.png";
+    }
+    else if(Type == "tiff")
+    {
+      ImgURL = "Img/TIFF.png";
+    }
+    else if(Type == "txt")
+    {
+      ImgURL = "Img/TXT.png";
+    }
+    else if(Type == "wav")
+    {
+      ImgURL = "Img/WAV.png";
+    }
+    else if(Type == "xls" || Type == "xlsx")
+    {
+      ImgURL = "Img/XLS.png";
+    }
+    else if(Type == "xml")
+    {
+      ImgURL = "Img/XML.png";
+    }
     else if(Type == "zip")
     {
       ImgURL = "Img/ZIP.png";
+    }
+    else
+    {
+      ImgURL = "Img/Default.png";
     }
     
 
@@ -187,6 +255,7 @@ function App() {
                   <button className={`${style.FileBtn}`} onClick={() => Modal(file.key)}>
                     <img className={`${style.IMG}`} src={FileType(file.key)}/>
                     <div className={`${style.FileValue}`}>{FileName(file.key)}</div>
+                    <div className={`${style.Capacity}`}></div>
                   </button>
                 </td>
                 <td className={`${style.Modal}`} id = {file.key}>
